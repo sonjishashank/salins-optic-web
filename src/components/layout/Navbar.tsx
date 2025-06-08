@@ -17,7 +17,7 @@ const Navbar = () => {
   ];
 
   const handleApplyNow = () => {
-    window.open('https://forms.google.com/placeholder', '_blank');
+    window.open('https://docs.google.com/forms/d/e/1FAIpQLSfrKremrqPjDh5O_o9GrJ60qdIq4d9LjIJ30IDe-Ar9YrQchw/viewform?usp=sharing', '_blank');
   };
 
   return (
@@ -26,9 +26,11 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-lg">S</span>
-            </div>
+            <img 
+              src="http://velemegna.org/newsletters/logo%20hospital.png" 
+              alt="S. Salins College Logo" 
+              className="w-10 h-10 object-contain"
+            />
             <div className="hidden sm:block">
               <h1 className="font-semibold text-lg text-foreground">
                 S. Salins College

@@ -9,62 +9,62 @@ const Admission = () => {
     {
       program: "Bachelor of Optometry",
       requirements: [
-        "Completed 12th grade with Physics, Chemistry, Biology",
+        "Completed 12th grade or PUC with English, Physics, Chemistry, Maths/Biology",
         "Minimum 75% aggregate marks in science subjects",
         "Valid entrance exam score (NEET/State CET)",
         "Age between 17-25 years"
       ],
-      duration: "4 Years",
-      intake: "60 Students"
+      duration: "3+1 Years",
+      intake: "Jun-Nov"
     },
     {
-      program: "Advanced Optometry Programs",
+      program: "B. Optom (for Diploma holders)",
       requirements: [
         "Bachelor's degree in Optometry (B.Optom)",
         "Minimum 70% marks in undergraduate program",
         "2+ years clinical experience preferred",
         "Research proposal for specialized tracks"
       ],
-      duration: "2 Years",
-      intake: "20 Students"
+      duration: "2+1 Years",
+      intake: "Jun-Nov"
     }
   ];
 
   const admissionSteps = [
     {
       step: 1,
-      title: "Online Application",
-      description: "Complete the online application form with all required details",
+      title: "Filling application form",
+      description: "Complete the application form with all required details",
       icon: FileText,
-      timeline: "March - June"
+      timeline: "June"
     },
     {
       step: 2,
-      title: "Document Submission",
+      title: "Uploading merit documents",
       description: "Upload all necessary academic and personal documents",
       icon: CheckCircle,
       timeline: "After Application"
     },
     {
       step: 3,
-      title: "Entrance Examination",
-      description: "Appear for written test and practical assessment",
+      title: "Entrance exam and interview",
+      description: "Appear for written test, practical assessment, personal interview and academic counseling session",
       icon: BookOpen,
       timeline: "July"
     },
     {
       step: 4,
-      title: "Interview & Counseling",
-      description: "Personal interview and academic counseling session",
+      title: "Selection of candidates",
+      description: "Selection of candidates based on merit and eligibility",
       icon: Users,
       timeline: "August"
     },
     {
       step: 5,
-      title: "Final Selection",
-      description: "Merit list publication and seat allocation",
+      title: "Admission letter and fee payment",
+      description: "Receive admission letter and complete the fee payment",
       icon: GraduationCap,
-      timeline: "August - September"
+      timeline: "August - November"
     }
   ];
 
@@ -101,7 +101,7 @@ const Admission = () => {
           <Button 
             size="lg" 
             className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-3 rounded-full transition-all duration-200 hover:scale-105 shadow-lg"
-            onClick={() => window.open('https://forms.google.com/placeholder', '_blank')}
+            onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSfrKremrqPjDh5O_o9GrJ60qdIq4d9LjIJ30IDe-Ar9YrQchw/viewform?usp=sharing', '_blank')}
           >
             Apply Now
             <ExternalLink className="w-5 h-5 ml-2" />

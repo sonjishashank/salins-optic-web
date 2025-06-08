@@ -36,16 +36,16 @@ const Footer = () => {
               <div className="flex items-center space-x-3">
                 <MapPin className="w-5 h-5 text-primary-foreground/80" />
                 <p className="text-primary-foreground/80">
-                  123 Education Street, Academic City, AC 12345
+                Golekhana, Bidar – 585401, Karnataka India
                 </p>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-primary-foreground/80" />
-                <p className="text-primary-foreground/80">+1 (555) 123-4567</p>
+                <p className="text-primary-foreground/80">+91 9900293035</p>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-primary-foreground/80" />
-                <p className="text-primary-foreground/80">info@salinsoptometry.edu</p>
+                <p className="text-primary-foreground/80">ssalinsoptometrycollege@gmail.com</p>
               </div>
             </div>
           </div>
@@ -71,7 +71,7 @@ const Footer = () => {
 
         <div className="border-t border-primary-foreground/20 mt-8 pt-8 text-center">
           <p className="text-primary-foreground/80">
-            © 2024 S. Salins College of Optometry. All rights reserved.
+            © 2025 S. Salins College of Optometry. All rights reserved.
           </p>
         </div>
       </div>

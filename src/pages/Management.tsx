@@ -4,14 +4,14 @@ import { Mail, Phone } from 'lucide-react';
 
 const Management = () => {
   const principal = {
-    name: "Dr. Sarah Johnson",
-    title: "Principal",
-    qualification: "PhD in Optometry, MS in Vision Science",
+    name: "Dr. Sybil Salins",
+    title: "Director/Principal",
+    qualification: "MBBS.M.Sc.CEH (London), DOMS(Vellore), ophthalmology Surgeon (Eye Specialist)",
     experience: "25+ years",
     email: "principal@salinsoptometry.edu",
     phone: "+1 (555) 123-4501",
-    image: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=400&q=80",
-    bio: "Dr. Sarah Johnson brings over 25 years of experience in optometric education and clinical practice. She has been instrumental in developing innovative curricula and advancing research in vision science.",
+    image: "http://velemegna.org/newsletters/Sybil.png?auto=format&fit=crop&w=400&q=80",
+    bio: "Dr. Sybil Salins brings over 25 years of experience in optometric education and clinical practice. She has been instrumental in developing innovative curricula and advancing research in vision science.",
     achievements: ["Fellow of American Academy of Optometry", "Published 50+ research papers", "Recipient of Excellence in Education Award"]
   };
 

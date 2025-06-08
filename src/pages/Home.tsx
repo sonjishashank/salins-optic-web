@@ -48,7 +48,7 @@ const Home = () => {
               <Button 
                 size="lg" 
                 className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-3 rounded-full transition-all duration-200 hover:scale-105 shadow-lg"
-                onClick={() => window.open('https://forms.google.com/placeholder', '_blank')}
+                onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSfrKremrqPjDh5O_o9GrJ60qdIq4d9LjIJ30IDe-Ar9YrQchw/viewform?usp=sharing', '_blank')}
               >
                 Apply Now
                 <ArrowRight className="w-5 h-5 ml-2" />
@@ -57,6 +57,7 @@ const Home = () => {
                 variant="outline" 
                 size="lg"
                 className="border-primary text-primary hover:bg-primary hover:text-primary-foreground font-semibold px-8 py-3 rounded-full transition-all duration-200 hover:scale-105"
+                onClick={() => window.location.href = '/admission'}
               >
                 Learn More
               </Button>
@@ -75,15 +76,12 @@ const Home = () => {
                 <span className="block text-primary">Institution</span>
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                S. Salins College of Optometry has been at the forefront of optometric education for over 15 years. We are committed to providing world-class education in eye care and vision science, preparing our students to become competent and compassionate eye care professionals.
-              </p>
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                Our state-of-the-art facilities, experienced faculty, and comprehensive curriculum ensure that our graduates are well-equipped to meet the evolving needs of the eye care industry.
+              S.Salins college of Optometry, Bidar established Dr. Sybil Salins in the memory of her mother Dr. Mrs. Susheela Salins in the year 2014-15. Dr. Sybil Salins realized that there are no optometry colleges in the northern part of Karnataka and especially in Bidar district. So she has taken a challenge to open an optometry college to educate students in the Bidar district. S.Salins College of Optometry is running by the Velemegna Good News Society Hospital, Bidar. Here we are offering B.Sc Optometry course since 2014-15. Our college is affiliated with Rajiv Gandhi University of Health Sciences, Bangalore.
               </p>
             </div>
             <div className="lg:order-last">
               <img 
-                src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=1200&q=80" 
+                src="http://velemegna.org/newsletters/About1.jpg?auto=format&fit=crop&w=1200&q=80" 
                 alt="College Building" 
                 className="rounded-2xl shadow-2xl w-full h-96 object-cover"
               />
@@ -132,7 +130,10 @@ const Home = () => {
                 Our Vision & Mission
               </h2>
               <p className="text-xl text-primary-foreground/90 max-w-4xl mx-auto leading-relaxed">
-                To be the leading institution in optometric education, fostering innovation in eye care and producing skilled professionals who contribute to the advancement of vision science and the well-being of communities worldwide.
+              Velemegna society seeks to demonstrate the love of Christ through excellence in health care and community services.
+              </p>
+              <p className="text-xl text-primary-foreground/90 max-w-4xl mx-auto leading-relaxed">
+              ‘Velemegna’ is a registered charitable society. We provide quality eye care services, which is comprehensive and affordable to all. This is achieved by training, research, and excellence in service delivery. In addition, we will continue with Founders compassion for care of the Leprosy affected.
               </p>
             </div>
             

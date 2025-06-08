@@ -10,19 +10,19 @@ const Contact = () => {
     {
       icon: MapPin,
       title: "Address",
-      details: ["123 Education Street", "Academic City, AC 12345", "India"],
+      details: ["Golekhana", "Bidar, KA 585401", "India"],
       color: "text-blue-600"
     },
     {
       icon: Phone,
       title: "Phone",
-      details: ["+1 (555) 123-4567", "+1 (555) 123-4568", "Emergency: +1 (555) 911-0000"],
+      details: ["08482-230467, -230460", "+91 9483612027", "+91 9900293035"],
       color: "text-green-600"
     },
     {
       icon: Mail,
       title: "Email",
-      details: ["info@salinsoptometry.edu", "admissions@salinsoptometry.edu", "support@salinsoptometry.edu"],
+      details: ["velemegnabidar@gmail.com", "ssalinsoptometrycollege@gmail.com"],
       color: "text-purple-600"
     },
     {
@@ -201,7 +201,7 @@ const Contact = () => {
                 <CardContent className="p-0">
                   <div className="aspect-video">
                     <iframe
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.1!2d-74.0!3d40.7!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQyJzAwLjAiTiA3NMKwMDAnMDAuMCJX!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus"
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3796.3873055129166!2d77.533378!3d17.9140806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcec758990ab1f7%3A0xe6459a46b6794e22!2sS%20SALINS%20COLLEGE%20OF%20OPTOMETRY!5e0!3m2!1sen!2sin!4v1749393585453!5m2!1sen!2sin"
                       className="w-full h-full border-0"
                       allowFullScreen
                       loading="lazy"
@@ -255,16 +255,16 @@ const Contact = () => {
               variant="secondary"
               size="lg"
               className="bg-primary-foreground text-primary hover:bg-primary-foreground/90 font-semibold px-8 py-3 rounded-full transition-all duration-200 hover:scale-105"
-              onClick={() => window.location.href = 'tel:+15559110000'}
+              onClick={() => window.location.href = 'tel:+91 9900293035'}
             >
               <Phone className="w-5 h-5 mr-2" />
-              Emergency: (555) 911-0000
+              Emergency: +91 9900293035
             </Button>
             <Button 
               variant="outline"
               size="lg"
               className="border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground hover:text-primary font-semibold px-8 py-3 rounded-full transition-all duration-200 hover:scale-105"
-              onClick={() => window.location.href = 'mailto:emergency@salinsoptometry.edu'}
+              onClick={() => window.location.href = 'mailto:velemegnabidar@gmail.com'}
             >
               <Mail className="w-5 h-5 mr-2" />
               Emergency Email
