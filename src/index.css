@@ -5,7 +5,7 @@
 @layer base {
   :root {
     /* Base colors */
-    --background: 204 20% 96%; /* #F0F4F8 - Off-White */
+    --background: 204 20% 96%; /* #F0F4F8 - Off-White **/
     --foreground: 0 0% 0%; /* Black text */
 
     /* Primary colors */
