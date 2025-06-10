@@ -8,20 +8,8 @@ const Home = () => {
       icon: Eye,
       title: "Bachelor of Optometry",
       description: "Comprehensive 4-year program covering all aspects of eye care and vision science.",
-      duration: "4 Years"
+      duration: "3+1 Years"
     },
-    {
-      icon: BookOpen,
-      title: "Advanced Optometry",
-      description: "Specialized courses in contact lens fitting, low vision rehabilitation, and pediatric optometry.",
-      duration: "2 Years"
-    },
-    {
-      icon: Award,
-      title: "Research Programs",
-      description: "Cutting-edge research opportunities in vision science and ocular health.",
-      duration: "Ongoing"
-    }
   ];
 
   const stats = [
@@ -102,9 +90,9 @@ const Home = () => {
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="flex justify-center">
             {programs.map((program, index) => (
-              <Card key={index} className="hover:shadow-lg transition-all duration-300 hover:-translate-y-2 border-0 shadow-md">
+              <Card key={index} className="hover:shadow-lg transition-all duration-300 hover:-translate-y-2 border-0 shadow-md max-w-sm w-full">
                 <CardContent className="p-8 text-center space-y-4">
                   <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto">
                     <program.icon className="w-8 h-8 text-primary" />
@@ -117,6 +105,64 @@ const Home = () => {
                 </CardContent>
               </Card>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Special Features Section */}
+      <section className="py-20 bg-background">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center space-y-6 mb-16">
+            <h2 className="font-bold text-4xl md:text-5xl text-foreground">
+              Special <span className="text-primary">Features</span>
+            </h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              Discover what makes S Salins College of Optometry unique
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <Card className="hover:shadow-lg transition-all duration-300 hover:-translate-y-2 border-0 shadow-md">
+              <CardContent className="p-8 space-y-4">
+                <h3 className="font-semibold text-xl text-foreground">Infrastructure</h3>
+                <p className="text-muted-foreground">Good infrastructure with well-equipped labs and clinics providing students with a modern learning environment.</p>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-lg transition-all duration-300 hover:-translate-y-2 border-0 shadow-md">
+              <CardContent className="p-8 space-y-4">
+                <h3 className="font-semibold text-xl text-foreground">Supportive Environment</h3>
+                <p className="text-muted-foreground">A friendly atmosphere providing proactive support to students, fostering growth and learning.</p>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-lg transition-all duration-300 hover:-translate-y-2 border-0 shadow-md">
+              <CardContent className="p-8 space-y-4">
+                <h3 className="font-semibold text-xl text-foreground">Expert Faculty</h3>
+                <p className="text-muted-foreground">A committed set of teaching faculty who nurture students and provide excellent opportunities to learn, grow, and shine.</p>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-lg transition-all duration-300 hover:-translate-y-2 border-0 shadow-md">
+              <CardContent className="p-8 space-y-4">
+                <h3 className="font-semibold text-xl text-foreground">Clinical Excellence</h3>
+                <p className="text-muted-foreground">Complete emphasis on clinical training to ensure practical expertise in the field of optometry.</p>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-lg transition-all duration-300 hover:-translate-y-2 border-0 shadow-md">
+              <CardContent className="p-8 space-y-4">
+                <h3 className="font-semibold text-xl text-foreground">Career Opportunities</h3>
+                <p className="text-muted-foreground">Excellent job opportunities within Velemegna eye hospital and other eye care providers through our campus placement services.</p>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-lg transition-all duration-300 hover:-translate-y-2 border-0 shadow-md">
+              <CardContent className="p-8 space-y-4">
+                <h3 className="font-semibold text-xl text-foreground">Research Environment</h3>
+                <p className="text-muted-foreground">A dynamic research environment that pushes students to excel and think out-of-the-box.</p>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>

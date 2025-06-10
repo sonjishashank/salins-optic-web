@@ -5,7 +5,7 @@ const Footer = () => {
   const socialLinks = [
     { name: 'Facebook', icon: Facebook, url: '#' },
     { name: 'Instagram', icon: Instagram, url: '#' },
-    { name: 'LinkedIn', icon: Linkedin, url: '#' },
+    // { name: 'LinkedIn', icon: Linkedin, url: '#' },
     { name: 'YouTube', icon: Youtube, url: '#' },
   ];
 

@@ -10,20 +10,18 @@ const Admission = () => {
       program: "Bachelor of Optometry",
       requirements: [
         "Completed 12th grade or PUC with English, Physics, Chemistry, Maths/Biology",
-        "Minimum 75% aggregate marks in science subjects",
-        "Valid entrance exam score (NEET/State CET)",
+        "Minimum 35% aggregate marks in science subjects",
+        "Valid entrance exam score (K-CET)",
         "Age between 17-25 years"
       ],
       duration: "3+1 Years",
       intake: "Jun-Nov"
     },
     {
-      program: "B. Optom (for Diploma holders)",
+      program: "Bsc. Optometry (for Diploma holders)",
       requirements: [
         "Bachelor's degree in Optometry (B.Optom)",
-        "Minimum 70% marks in undergraduate program",
-        "2+ years clinical experience preferred",
-        "Research proposal for specialized tracks"
+        "Minimum 35% marks in undergraduate program",
       ],
       duration: "2+1 Years",
       intake: "Jun-Nov"
@@ -71,7 +69,7 @@ const Admission = () => {
   const faqs = [
     {
       question: "What is the application deadline for the Bachelor of Optometry program?",
-      answer: "The application deadline is typically June 30th for the academic year starting in September. However, we recommend applying early as seats are limited and filled on a first-come, first-served basis among qualified candidates."
+      answer: "The application deadline is typically June for the academic year starting in September. However, we recommend applying early as seats are limited and filled on a first-come, first-served basis among qualified candidates."
     },
     {
       question: "Are there any scholarship opportunities available?",
@@ -79,11 +77,11 @@ const Admission = () => {
     },
     {
       question: "What documents are required for admission?",
-      answer: "Required documents include: academic transcripts, entrance exam scores, identity proof, address proof, caste certificate (if applicable), medical certificate, passport-size photographs, and migration certificate from the previous institution."
+      answer: "Required documents include: academic transcripts, entrance exam scores, identity proof, address proof, caste certificate (if applicable), medical certificate, passport-size photographs."
     },
     {
       question: "What is the fee structure?",
-      answer: "The fee structure varies by program. Bachelor of Optometry: ₹80,000 per year. Advanced programs: ₹1,20,000 per year. Additional costs include hostel fees, examination fees, and practical lab charges. Detailed fee structure is provided during admission counseling."
+      answer: "The fee structure varies for Bachelor of Optometry. Additional costs include hostel fees, examination fees, and practical lab charges. Detailed fee structure is provided during admission counseling."
     }
   ];
 
@@ -185,6 +183,77 @@ const Admission = () => {
                 </Card>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Application Details Section */}
+      <section className="py-16 bg-background">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center space-y-6 mb-16">
+            <h2 className="font-bold text-4xl md:text-5xl text-foreground">
+              How to <span className="text-primary">Apply</span>
+            </h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              Complete guide on obtaining and submitting your application
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <Card className="shadow-lg hover:shadow-xl transition-all duration-300">
+              <CardHeader>
+                <CardTitle className="text-2xl text-foreground">Application Form</CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <p className="text-muted-foreground">
+                  Application forms are available at:<br />
+                  Course Coordinator<br />
+                  S Salins College of Optometry<br />
+                  Velemegna Society, Golekhana<br />
+                  Bidar – 585401, Karnataka
+                </p>
+                <div className="space-y-2">
+                  <p className="text-muted-foreground"><strong>Form Fee:</strong></p>
+                  <ul className="list-disc list-inside text-muted-foreground space-y-1">
+                    <li>In-person payment: Rs. 300/-</li>
+                    <li>By post: Rs. 350/- (DD in favor of "S Salins College of Optometry, Bidar")</li>
+                  </ul>
+                </div>
+                <p className="text-muted-foreground">
+                  The application must be handwritten and filled in block letters by the applicant.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="shadow-lg hover:shadow-xl transition-all duration-300">
+              <CardHeader>
+                <CardTitle className="text-2xl text-foreground">Required Documents</CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <ul className="space-y-3">
+                  {[
+                    "Attested copy of SSLC mark list",
+                    "Attested copy of Plus Two or equivalent mark list",
+                    "Attested copy of Birth Certificate",
+                    "Character Certificate from the previous institution",
+                    "Two Passport size colour photos",
+                    "A self addressed envelope with Rs. 5/- stamp affixed"
+                  ].map((doc, index) => (
+                    <li key={index} className="flex items-start space-x-3">
+                      <CheckCircle className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
+                      <span className="text-muted-foreground">{doc}</span>
+                    </li>
+                  ))}
+                </ul>
+                <div className="mt-6 space-y-3">
+                  <p className="text-muted-foreground font-medium">Important Notes:</p>
+                  <ul className="space-y-2">
+                    <li className="text-muted-foreground">Original Certificates should be produced only at the time of admission.</li>
+                    <li className="text-muted-foreground">The completed application form with all enclosures should be forwarded to The Principal.</li>
+                  </ul>
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
