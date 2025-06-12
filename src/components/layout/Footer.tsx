@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button';
 const Footer = () => {
   const socialLinks = [
     { name: 'Facebook', icon: Facebook, url: '#' },
-    { name: 'Instagram', icon: Instagram, url: '#' },
+    { name: 'Instagram', icon: Instagram, url: 'https://www.instagram.com/salinsoptometrycollege/?utm_source=ig_embed&ig_rid=de764a22-ba8b-4ebc-a7fb-45a3050862dd' },
     // { name: 'LinkedIn', icon: Linkedin, url: '#' },
     { name: 'YouTube', icon: Youtube, url: '#' },
   ];

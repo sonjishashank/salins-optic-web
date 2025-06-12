@@ -56,10 +56,18 @@ const Events = () => {
   ];
 
   const pastEventImages = [
-    "/images/image65.jpeg",
-    "/images/image 74.jpeg",
-    "/images/image 74.jpeg",
-    "/images/image 74.jpeg",
+    "/images/image 73.jpeg",
+    "/images/image 78.jpeg",
+    "/images/image6.jpeg",
+    "/images/image59.jpeg",
+    "/images/image61.jpeg",
+    "/images/image67.jpeg",
+    "/images/image47.jpeg",
+    "/images/image55.jpeg",
+    "/images/image36.jpeg",
+    "/images/image24.jpeg",
+    "/images/image 75.jpeg",
+    "/images/image 76.jpeg",
   ];
 
   const getEventTypeColor = (type: string) => {
@@ -85,6 +93,52 @@ const Events = () => {
         </div>
       </section>
 
+      {/* Featured Image */}
+      <section className="py-12 px-4">
+        <div className="max-w-5xl mx-auto">
+          <Card className="overflow-hidden transform hover:scale-[1.02] transition-transform duration-300 bg-gradient-to-br from-background to-accent/5 border-2 border-accent/20">
+            <CardContent className="p-0">
+              <div className="aspect-[16/9] relative">
+                <img 
+                  src="/images/image 74.jpeg" 
+                  alt="Featured Event" 
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex items-end p-8">
+                  <div className="text-white">
+                    <h3 className="text-2xl font-bold mb-2">Featured Event Highlight</h3>
+                    <p className="text-white/90">Experience the excellence of optometry education at S. Salins College</p>
+                  </div>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+
+{/* Featured Video */}
+<section className="py-12 px-4">
+        <div className="max-w-5xl mx-auto">
+          <Card className="overflow-hidden transform hover:scale-[1.02] transition-transform duration-300 bg-gradient-to-br from-background to-accent/5 border-2 border-accent/20">
+            <CardContent className="p-0">
+              <div className="aspect-[16/9] relative">
+                <iframe
+                  src="https://www.youtube.com/embed/y3ENCYq4eP4?si=SqDEmipOspYv1Hc4"
+                  title="Featured Video"
+                  className="w-full h-full"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  frameBorder="0"
+                ></iframe>
+              </div>
+              <div className="p-6">
+                <h3 className="text-2xl font-bold mb-2 text-foreground">Featured Video</h3>
+                <p className="text-muted-foreground">Watch our latest featured content showcasing excellence in optometry education</p>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
       {/* Upcoming Events */}
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

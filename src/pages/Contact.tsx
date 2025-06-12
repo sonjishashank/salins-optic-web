@@ -35,7 +35,7 @@ const Contact = () => {
 
   const socialLinks = [
     { name: 'Facebook', icon: Facebook, url: '#', color: 'hover:text-blue-600' },
-    { name: 'Instagram', icon: Instagram, url: '#', color: 'hover:text-pink-600' },
+    { name: 'Instagram', icon: Instagram, url: 'https://www.instagram.com/salinsoptometrycollege/?utm_source=ig_embed&ig_rid=de764a22-ba8b-4ebc-a7fb-45a3050862dd', color: 'hover:text-pink-600' },
     { name: 'LinkedIn', icon: Linkedin, url: '#', color: 'hover:text-blue-700' },
     { name: 'YouTube', icon: Youtube, url: '#', color: 'hover:text-red-600' },
   ];

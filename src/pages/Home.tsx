@@ -13,16 +13,27 @@ const Home = () => {
   ];
 
   const stats = [
-    { icon: Users, number: "500+", label: "Students Enrolled" },
-    { icon: Award, number: "95%", label: "Graduate Success Rate" },
-    { icon: BookOpen, number: "25+", label: "Expert Faculty" },
-    { icon: Eye, number: "15+", label: "Years of Excellence" }
+    // { icon: Users, number: "20+", label: "Students Enrolled" },
+    { icon: Award, number: "98%", label: "Graduate Success Rate" },
+    { icon: BookOpen, number: "10+", label: "Expert Faculty" },
+    { icon: Eye, number: "11+", label: "Years of Excellence" }
   ];
 
   return (
     <div className="pt-16">
       {/* Hero Section */}
-      <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-primary/5 via-background to-accent/20 relative overflow-hidden">
+      <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
+      {/* <div className="absolute inset-0 z-0">
+  <iframe
+    src="https://my.spline.design/celestialflowabstractdigitalform-CZzYywxKdWgTSoOx5S7skZng/"
+    frameBorder="0"
+    width="100%"
+    height="100%"
+    allowFullScreen
+    className="w-full h-full"
+  ></iframe>
+</div> */}
+
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center space-y-8">
             <h1 className="font-bold text-5xl md:text-7xl lg:text-8xl text-foreground leading-tight">
@@ -183,19 +194,22 @@ const Home = () => {
               </p>
             </div>
             
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-              {stats.map((stat, index) => (
-                <div key={index} className="text-center space-y-4">
-                  <div className="w-16 h-16 bg-primary-foreground/10 rounded-full flex items-center justify-center mx-auto">
-                    <stat.icon className="w-8 h-8 text-primary-foreground" />
+            <div className="flex justify-center">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-4xl">
+                {stats.map((stat, index) => (
+                  <div key={index} className="text-center space-y-4">
+                    <div className="w-20 h-20 bg-primary-foreground/10 rounded-full flex items-center justify-center mx-auto">
+                      <stat.icon className="w-10 h-10 text-primary-foreground" />
+                    </div>
+                    <div>
+                      <div className="font-bold text-3xl md:text-4xl">{stat.number}</div>
+                      <div className="text-primary-foreground/80">{stat.label}</div>
+                    </div>
                   </div>
-                  <div>
-                    <div className="font-bold text-3xl md:text-4xl">{stat.number}</div>
-                    <div className="text-primary-foreground/80">{stat.label}</div>
-                  </div>
-                </div>
-              ))}
-            </div>
+                ))}
+              </div>
+            
+          </div>
           </div>
         </div>
       </section>
