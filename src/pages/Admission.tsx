@@ -175,10 +175,10 @@ const Admission = () => {
                       <h3 className="font-semibold text-lg text-foreground">{step.title}</h3>
                       <p className="text-sm text-muted-foreground">{step.description}</p>
                     </div>
-                    <div className="flex items-center justify-center space-x-2 text-primary">
+                    {/* <div className="flex items-center justify-center space-x-2 text-primary">
                       <Clock className="w-4 h-4" />
                       <span className="text-sm font-medium">{step.timeline}</span>
-                    </div>
+                    </div> */}
                   </CardContent>
                 </Card>
               </div>

@@ -56,9 +56,10 @@ const Events = () => {
   ];
 
   const pastEventImages = [
-    "https://images.unsplash.com/photo-1591115765373-5207764f72e7?auto=format&fit=crop&w=800&q=80",
-    "https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=800&q=80",
-    "https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=800&q=80",
+    "/images/image65.jpeg",
+    "/images/image 74.jpeg",
+    "/images/image 74.jpeg",
+    "/images/image 74.jpeg",
   ];
 
   const getEventTypeColor = (type: string) => {
@@ -151,7 +152,7 @@ const Events = () => {
       </section>
 
       {/* Event Videos */}
-      <section className="py-16 bg-accent/20">
+      {/* <section className="py-16 bg-accent/20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center space-y-6 mb-16">
             <h2 className="font-bold text-4xl md:text-5xl text-foreground">
@@ -185,7 +186,7 @@ const Events = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Past Events Gallery */}
       <section className="py-16">
