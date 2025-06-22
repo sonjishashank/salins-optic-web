@@ -1,0 +1,58 @@
+{
+  "hero_title1": "Get in",
+  "hero_title2_primary": "Touch",
+  "hero_subtitle": "We're here to help you with any questions about our programs, admissions, or campus life. Reach out to us today!",
+  "contact_info": [
+    {
+      "icon": "MapPin",
+      "title": "Address",
+      "details": ["Old City, Golekhana", "Bidar, KA 585401", "India"],
+      "color": "text-blue-600"
+    },
+    {
+      "icon": "Phone",
+      "title": "Phone",
+      "details": ["08482-230467, -230460", "+91 9483612027", "+91 9900293035"],
+      "color": "text-green-600"
+    },
+    {
+      "icon": "Mail",
+      "title": "Email",
+      "details": ["ssalinsoptometrycollege@gmail.com"],
+      "color": "text-purple-600"
+    },
+    {
+      "icon": "Clock",
+      "title": "Office Hours",
+      "details": ["Monday - Friday: 9:00 AM - 6:00 PM", "Saturday: 9:00 AM - 2:00 PM", "Sunday: Closed"],
+      "color": "text-orange-600"
+    }
+  ],
+  "social_links": [
+    {
+      "name": "Facebook",
+      "icon": "Facebook",
+      "url": "#",
+      "color": "hover:text-blue-600"
+    },
+    {
+      "name": "Instagram",
+      "icon": "Instagram",
+      "url": "https://www.instagram.com/salinsoptometrycollege/?utm_source=ig_embed&ig_rid=de764a22-ba8b-4ebc-a7fb-45a3050862dd",
+      "color": "hover:text-pink-600"
+    },
+    {
+      "name": "LinkedIn",
+      "icon": "Linkedin",
+      "url": "#",
+      "color": "hover:text-blue-700"
+    },
+    {
+      "name": "YouTube",
+      "icon": "Youtube",
+      "url": "#",
+      "color": "hover:text-red-600"
+    }
+  ],
+  "form_endpoint": "mkgbvdra"
+}
