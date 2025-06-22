@@ -6,33 +6,33 @@ import { Calendar, MapPin, Clock, Users, ExternalLink } from 'lucide-react';
 const Events = () => {
   const upcomingEvents = [
     {
-      title: "Annual Optometry Conference 2024",
-      date: "March 15-17, 2024",
-      time: "9:00 AM - 6:00 PM",
-      location: "Main Auditorium",
+      title: "World Sight Day",
+      date: "October 09, 2025",
+      time: "09:00 AM - 06:00 PM",
+      location: "S Salins Optometry College",
       description: "Join leading experts in optometry for three days of cutting-edge research presentations, workshops, and networking opportunities.",
       attendees: "200+ Expected",
-      type: "Conference",
+      type: "Event",
       registration: "https://forms.google.com/placeholder"
     },
     {
-      title: "Student Research Symposium",
-      date: "April 8, 2024",
-      time: "10:00 AM - 4:00 PM",
-      location: "Research Center",
+      title: "World Optometry Day",
+      date: "March 23, 2026",
+      time: "09:00 AM - 06:00 PM",
+      location: "S Salins Optometry College",
       description: "Showcase of outstanding student research projects in vision science and clinical optometry.",
       attendees: "150+ Expected",
-      type: "Academic",
+      type: "Event",
       registration: "https://forms.google.com/placeholder"
     },
     {
-      title: "Industry Connect Workshop",
-      date: "April 22, 2024",
-      time: "2:00 PM - 5:00 PM",
-      location: "Seminar Hall B",
+      title: "World Glaucoma Week",
+      date: "March 09-15, 2026",
+      time: "09:00 PM - 06:00 PM",
+      location: "S Salins Optometry College",
       description: "Interactive workshop connecting students with industry professionals and potential employers.",
       attendees: "80+ Expected",
-      type: "Workshop",
+      type: "Event",
       registration: "https://forms.google.com/placeholder"
     }
   ];
@@ -164,9 +164,9 @@ const Events = () => {
                         </Badge>
                       </div>
                       
-                      <p className="text-muted-foreground leading-relaxed">
+                      {/* <p className="text-muted-foreground leading-relaxed">
                         {event.description}
-                      </p>
+                      </p> */}
                       
                       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-sm">
                         <div className="flex items-center space-x-2 text-muted-foreground">
@@ -181,14 +181,14 @@ const Events = () => {
                           <MapPin className="w-4 h-4 text-primary" />
                           <span>{event.location}</span>
                         </div>
-                        <div className="flex items-center space-x-2 text-muted-foreground">
+                        {/* <div className="flex items-center space-x-2 text-muted-foreground">
                           <Users className="w-4 h-4 text-primary" />
                           <span>{event.attendees}</span>
-                        </div>
+                        </div> */}
                       </div>
                     </div>
                     
-                    <div className="lg:col-span-1 flex justify-center lg:justify-end">
+                    {/* <div className="lg:col-span-1 flex justify-center lg:justify-end">
                       <Button 
                         className="bg-primary hover:bg-primary/90 text-primary-foreground font-medium px-6 py-3 rounded-full transition-all duration-200 hover:scale-105"
                         onClick={() => window.open(event.registration, '_blank')}
@@ -196,7 +196,7 @@ const Events = () => {
                         Register Now
                         <ExternalLink className="w-4 h-4 ml-2" />
                       </Button>
-                    </div>
+                    </div> */}
                   </div>
                 </CardContent>
               </Card>

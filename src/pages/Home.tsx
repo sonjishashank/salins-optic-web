@@ -1,6 +1,7 @@
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Eye, Users, Award, BookOpen, ArrowRight } from 'lucide-react';
+import Spline from '@splinetool/react-spline';
 
 const Home = () => {
   const programs = [
@@ -23,17 +24,18 @@ const Home = () => {
     <div className="pt-16">
       {/* Hero Section */}
       <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
-      {/* <div className="absolute inset-0 z-0">
-  <iframe
-    src="https://my.spline.design/celestialflowabstractdigitalform-CZzYywxKdWgTSoOx5S7skZng/"
-    frameBorder="0"
-    width="100%"
-    height="100%"
-    allowFullScreen
-    className="w-full h-full"
-  ></iframe>
-</div> */}
-
+        <div className="absolute inset-0 z-0">
+          <Spline 
+            scene="https://prod.spline.design/EXUCiceuP8odg10J/scene.splinecode" 
+            style={{ 
+              pointerEvents: 'none',
+              userSelect: 'none',
+              WebkitUserSelect: 'none',
+              MozUserSelect: 'none',
+              msUserSelect: 'none'
+            }} 
+          />
+        </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center space-y-8">
             <h1 className="font-bold text-5xl md:text-7xl lg:text-8xl text-foreground leading-tight">
@@ -97,7 +99,7 @@ const Home = () => {
               Our <span className="text-primary">Programs</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Comprehensive educational programs designed to prepare you for a successful career in optometry
+            The Bachelor of Optometry is a 4-year comprehensive program that trains students to become optometrists, specializing in eye care and vision science. Optometrists examine eyes, diagnose vision problems, prescribe corrective devices, and provide pre- and post-operative care. The program covers anatomy, physiology, vision science, eye diseases, and clinical techniques, preparing graduates for careers in private practice, research, academia, and public health.
             </p>
           </div>
           

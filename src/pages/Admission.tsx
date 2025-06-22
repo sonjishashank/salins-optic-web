@@ -12,7 +12,7 @@ const Admission = () => {
         "Completed 12th grade or PUC with English, Physics, Chemistry, Maths/Biology",
         "Minimum 35% aggregate marks in science subjects",
         "Valid entrance exam score (K-CET)",
-        "Age between 17-25 years"
+        "Age between 17-31 years"
       ],
       duration: "3+1 Years",
       intake: "Jun-Nov"
@@ -123,11 +123,14 @@ const Admission = () => {
             {eligibilityRequirements.map((program, index) => (
               <Card key={index} className="shadow-lg hover:shadow-xl transition-all duration-300">
                 <CardHeader>
+                <div className="flex gap-2">
+                    <Badge variant="outline">{program.intake}</Badge>
+                    </div>
                   <CardTitle className="text-2xl text-foreground flex items-center justify-between">
                     {program.program}
                     <div className="flex gap-2">
                       <Badge variant="secondary">{program.duration}</Badge>
-                      <Badge variant="outline">{program.intake}</Badge>
+                      {/* <Badge variant="outline">{program.intake}</Badge> */}
                     </div>
                   </CardTitle>
                 </CardHeader>

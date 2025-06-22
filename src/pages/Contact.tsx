@@ -4,13 +4,18 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
 import { MapPin, Phone, Mail, Clock, Facebook, Instagram, Linkedin, Youtube } from 'lucide-react';
+// Remove this import
+// import { useForm } from 'react-hook-form';
+
+// Add this import
+import { useForm, ValidationError } from '@formspree/react';
 
 const Contact = () => {
   const contactInfo = [
     {
       icon: MapPin,
       title: "Address",
-      details: ["Golekhana", "Bidar, KA 585401", "India"],
+      details: ["Old City, Golekhana", "Bidar, KA 585401", "India"],
       color: "text-blue-600"
     },
     {
@@ -22,7 +27,7 @@ const Contact = () => {
     {
       icon: Mail,
       title: "Email",
-      details: ["velemegnabidar@gmail.com", "ssalinsoptometrycollege@gmail.com"],
+      details: ["ssalinsoptometrycollege@gmail.com"],
       color: "text-purple-600"
     },
     {
@@ -40,9 +45,20 @@ const Contact = () => {
     { name: 'YouTube', icon: Youtube, url: '#', color: 'hover:text-red-600' },
   ];
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [formState, submitForm] = useForm("mkgbvdra");
+
+  if (formState.succeeded) {
+    return (
+      <div className="text-center p-8">
+        <h3 className="text-2xl font-semibold text-primary">Thank you for your message!</h3>
+        <p className="text-muted-foreground mt-2">We will get back to you soon.</p>
+      </div>
+    );
+  }
+
+  const onSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    alert('Thank you for your message! We will get back to you soon.');
+    submitForm(e);
   };
 
   return (
@@ -98,93 +114,52 @@ const Contact = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Contact Form */}
-            <div className="space-y-8">
-              <div>
-                <h2 className="font-bold text-3xl md:text-4xl text-foreground mb-4">
-                  Send us a <span className="text-primary">Message</span>
-                </h2>
-                <p className="text-muted-foreground">
-                  Fill out the form below and we'll get back to you as soon as possible.
-                </p>
-              </div>
-              
-              <Card className="shadow-lg">
-                <CardContent className="p-8">
-                  <form onSubmit={handleSubmit} className="space-y-6">
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                      <div className="space-y-2">
-                        <Label htmlFor="firstName" className="font-medium">First Name</Label>
-                        <Input 
-                          id="firstName" 
-                          placeholder="Enter your first name" 
-                          className="border-border focus:border-primary"
-                          required
-                        />
-                      </div>
-                      <div className="space-y-2">
-                        <Label htmlFor="lastName" className="font-medium">Last Name</Label>
-                        <Input 
-                          id="lastName" 
-                          placeholder="Enter your last name" 
-                          className="border-border focus:border-primary"
-                          required
-                        />
-                      </div>
-                    </div>
-                    
-                    <div className="space-y-2">
-                      <Label htmlFor="email" className="font-medium">Email Address</Label>
-                      <Input 
-                        id="email" 
-                        type="email" 
-                        placeholder="Enter your email address" 
-                        className="border-border focus:border-primary"
-                        required
-                      />
-                    </div>
-                    
-                    <div className="space-y-2">
-                      <Label htmlFor="phone" className="font-medium">Phone Number</Label>
-                      <Input 
-                        id="phone" 
-                        type="tel" 
-                        placeholder="Enter your phone number" 
-                        className="border-border focus:border-primary"
-                      />
-                    </div>
-                    
-                    <div className="space-y-2">
-                      <Label htmlFor="subject" className="font-medium">Subject</Label>
-                      <Input 
-                        id="subject" 
-                        placeholder="Enter message subject" 
-                        className="border-border focus:border-primary"
-                        required
-                      />
-                    </div>
-                    
-                    <div className="space-y-2">
-                      <Label htmlFor="message" className="font-medium">Message</Label>
-                      <Textarea 
-                        id="message" 
-                        placeholder="Enter your message here..." 
-                        rows={6}
-                        className="border-border focus:border-primary resize-none"
-                        required
-                      />
-                    </div>
-                    
-                    <Button 
-                      type="submit" 
-                      className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-semibold py-3 rounded-full transition-all duration-200 hover:scale-105"
-                    >
-                      Send Message
-                    </Button>
-                  </form>
-                </CardContent>
-              </Card>
-            </div>
+            <Card className="p-8">
+              <form onSubmit={onSubmit} className="space-y-6">
+                <div className="space-y-2">
+                  <Label htmlFor="name">Name</Label>
+                  <Input
+                    id="name"
+                    name="name"
+                    type="text"
+                    required
+                    placeholder="Your name"
+                  />
+                </div>
 
+                <div className="space-y-2">
+                  <Label htmlFor="email">Email</Label>
+                  <Input
+                    id="email"
+                    name="email"
+                    type="email"
+                    required
+                    placeholder="your.email@example.com"
+                  />
+                  <ValidationError prefix="Email" field="email" errors={formState.errors} />
+                </div>
+
+                <div className="space-y-2">
+                  <Label htmlFor="message">Message</Label>
+                  <Textarea
+                    id="message"
+                    name="message"
+                    required
+                    placeholder="Your message"
+                    className="min-h-[150px]"
+                  />
+                  <ValidationError prefix="Message" field="message" errors={formState.errors} />
+                </div>
+
+                <Button
+                  type="submit"
+                  className="w-full"
+                  disabled={formState.submitting}
+                >
+                  {formState.submitting ? 'Sending...' : 'Send Message'}
+                </Button>
+              </form>
+            </Card>
             {/* Map and Additional Info */}
             <div className="space-y-8">
               <div>
@@ -255,16 +230,16 @@ const Contact = () => {
               variant="secondary"
               size="lg"
               className="bg-primary-foreground text-primary hover:bg-primary-foreground/90 font-semibold px-8 py-3 rounded-full transition-all duration-200 hover:scale-105"
-              onClick={() => window.location.href = 'tel:+91 9900293035'}
+              onClick={() => window.location.href = 'tel:+91 9483612027'}
             >
               <Phone className="w-5 h-5 mr-2" />
-              Emergency: +91 9900293035
+              Emergency: +91 9483612027
             </Button>
             <Button 
               variant="outline"
               size="lg"
               className="border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground hover:text-primary font-semibold px-8 py-3 rounded-full transition-all duration-200 hover:scale-105"
-              onClick={() => window.location.href = 'mailto:velemegnabidar@gmail.com'}
+              onClick={() => window.location.href = 'mailto:ssalinsoptometrycollege@gmail.com'}
             >
               <Mail className="w-5 h-5 mr-2" />
               Emergency Email
