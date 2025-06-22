@@ -1,0 +1,110 @@
+{
+  "hero_title1": "Join Our",
+  "hero_title2_primary": "Community",
+  "hero_subtitle": "Begin your journey toward a rewarding career in optometry. Discover our comprehensive admission process and requirements.",
+  "hero_apply_button_text": "Apply Now",
+  "hero_apply_button_link": "https://docs.google.com/forms/d/e/1FAIpQLSfrKremrqPjDh5O_o9GrJ60qdIq4d9LjIJ30IDe-Ar9YrQchw/viewform?usp=sharing",
+  "eligibility_title1": "Eligibility",
+  "eligibility_title2_primary": "Requirements",
+  "eligibility_description": "Review our program requirements to ensure you meet the criteria for admission",
+  "eligibility_programs": [
+    {
+      "program_name": "Bachelor of Optometry",
+      "requirements": [
+        "Completed 12th grade or PUC with English, Physics, Chemistry, Maths/Biology",
+        "Minimum 35% aggregate marks in science subjects",
+        "Valid entrance exam score (K-CET)",
+        "Age between 17-31 years"
+      ],
+      "duration": "3+1 Years",
+      "intake": "Jun-Nov"
+    },
+    {
+      "program_name": "Bsc. Optometry (for Diploma holders)",
+      "requirements": [
+        "Bachelor's degree in Optometry (B.Optom)",
+        "Minimum 35% marks in undergraduate program"
+      ],
+      "duration": "2+1 Years",
+      "intake": "Jun-Nov"
+    }
+  ],
+  "process_title1": "Admission",
+  "process_title2_primary": "Process",
+  "process_description": "Follow these steps to complete your application successfully",
+  "admission_steps": [
+    {
+      "step": 1,
+      "title": "Filling application form",
+      "description": "Complete the application form with all required details",
+      "icon": "FileText"
+    },
+    {
+      "step": 2,
+      "title": "Uploading merit documents",
+      "description": "Upload all necessary academic and personal documents",
+      "icon": "CheckCircle"
+    },
+    {
+      "step": 3,
+      "title": "Entrance exam and interview",
+      "description": "Appear for written test, practical assessment, personal interview and academic counseling session",
+      "icon": "BookOpen"
+    },
+    {
+      "step": 4,
+      "title": "Selection of candidates",
+      "description": "Selection of candidates based on merit and eligibility",
+      "icon": "Users"
+    },
+    {
+      "step": 5,
+      "title": "Admission letter and fee payment",
+      "description": "Receive admission letter and complete the fee payment",
+      "icon": "GraduationCap"
+    }
+  ],
+  "apply_title1": "How to",
+  "apply_title2_primary": "Apply",
+  "apply_description": "Complete guide on obtaining and submitting your application",
+  "application_form_title": "Application Form",
+  "application_form_address": "Application forms are available at:\nCourse Coordinator\nS Salins College of Optometry\nVelemegna Society, Golekhana\nBidar – 585401, Karnataka",
+  "application_form_fee_person": "Rs. 300/-",
+  "application_form_fee_post": "Rs. 350/- (DD in favor of \"S Salins College of Optometry, Bidar\")",
+  "application_form_instructions": "The application must be handwritten and filled in block letters by the applicant.",
+  "required_docs_title": "Required Documents",
+  "required_docs_list": [
+    "Attested copy of SSLC mark list",
+    "Attested copy of Plus Two or equivalent mark list",
+    "Attested copy of Birth Certificate",
+    "Character Certificate from the previous institution",
+    "Two Passport size colour photos",
+    "A self addressed envelope with Rs. 5/- stamp affixed"
+  ],
+  "important_notes_title": "Important Notes:",
+  "important_notes_list": [
+    "Original Certificates should be produced only at the time of admission.",
+    "The completed application form with all enclosures should be forwarded to The Principal."
+  ],
+  "faq_title1": "Frequently Asked",
+  "faq_title2_primary": "Questions",
+  "faq_description": "Find answers to common questions about our admission process",
+  "faq_list": [
+    {
+      "question": "What is the application deadline for the Bachelor of Optometry program?",
+      "answer": "The application deadline is typically June for the academic year starting in September. However, we recommend applying early as seats are limited and filled on a first-come, first-served basis among qualified candidates."
+    },
+    {
+      "question": "Are there any scholarship opportunities available?",
+      "answer": "Yes, we offer various scholarships including merit-based scholarships for top performers, need-based financial aid, and special scholarships for students from underrepresented communities. Details are available during the counseling process."
+    },
+    {
+      "question": "What documents are required for admission?",
+      "answer": "Required documents include: academic transcripts, entrance exam scores, identity proof, address proof, caste certificate (if applicable), medical certificate, passport-size photographs."
+    },
+    {
+      "question": "What is the fee structure?",
+      "answer": "The fee structure varies for Bachelor of Optometry. Additional costs include hostel fees, examination fees, and practical lab charges. Detailed fee structure is provided during admission counseling."
+    }
+  ]
+}

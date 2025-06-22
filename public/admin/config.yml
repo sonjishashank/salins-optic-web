@@ -1,0 +1,208 @@
+backend:
+  name: github # Refer to https://decapcms.org/docs/github-backend/ for details
+  repo: your-username/your-repo-name # Replace with your GitHub repo: e.g., "owner/repo"
+  branch: main # Branch to update (optional, defaults to master)
+  # For Git Gateway (recommended for Vercel + Netlify Identity for auth)
+  # name: git-gateway
+  # branch: main
+
+media_folder: "public/images/uploads" # Where uploaded images will be stored in the repo
+public_folder: "/images/uploads" # The src attribute for uploaded media will begin with this path
+publish_mode: editorial_workflow # Enables a draft/review/publish workflow
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    files:
+      - label: "Home Page"
+        name: "home"
+        file: "src/content/home.json"
+        fields:
+          - { label: "Hero Section - Title Line 1", name: "hero_title1", widget: "string", default: "Excellence in" }
+          - { label: "Hero Section - Title Line 2 (Primary Color)", name: "hero_title2_primary", widget: "string", default: "Optometric Education" }
+          - { label: "Hero Section - Subtitle", name: "hero_subtitle", widget: "text", default: "Discover your potential at S. Salins College of Optometry, where we shape the future of eye care professionals through innovative education and hands-on experience." }
+          - { label: "Hero Section - Apply Now Button Text", name: "hero_apply_button_text", widget: "string", default: "Apply Now" }
+          - { label: "Hero Section - Apply Now Button Link", name: "hero_apply_button_link", widget: "string", default: "https://docs.google.com/forms/d/e/1FAIpQLSfrKremrqPjDh5O_o9GrJ60qdIq4d9LjIJ30IDe-Ar9YrQchw/viewform?usp=sharing" }
+          - { label: "Hero Section - Learn More Button Text", name: "hero_learn_more_button_text", widget: "string", default: "Learn More" }
+          - { label: "Hero Section - Learn More Button Link", name: "hero_learn_more_button_link", widget: "string", default: "/admission" }
+          - { label: "Hero Section - Spline Scene URL", name: "hero_spline_url", widget: "string", default: "https://prod.spline.design/EXUCiceuP8odg10J/scene.splinecode" }
+
+          - { label: "About Section - Title Line 1", name: "about_title1", widget: "string", default: "About Our" }
+          - { label: "About Section - Title Line 2 (Primary Color)", name: "about_title2_primary", widget: "string", default: "Institution" }
+          - { label: "About Section - Text", name: "about_text", widget: "markdown", default: "S.Salins college of Optometry, Bidar established Dr. Sybil Salins in the memory of her mother Dr. Mrs. Susheela Salins in the year 2014-15. Dr. Sybil Salins realized that there are no optometry colleges in the northern part of Karnataka and especially in Bidar district. So she has taken a challenge to open an optometry college to educate students in the Bidar district. S.Salins College of Optometry is running by the Velemegna Good News Society Hospital, Bidar. Here we are offering B.Sc Optometry course since 2014-15. Our college is affiliated with Rajiv Gandhi University of Health Sciences, Bangalore." }
+          - { label: "About Section - Image", name: "about_image", widget: "image", default: "http://velemegna.org/newsletters/About1.jpg?auto=format&fit=crop&w=1200&q=80", media_folder: "public/images/pages", public_folder: "/images/pages" }
+
+          - { label: "Programs Section - Title Line 1", name: "programs_title1", widget: "string", default: "Our" }
+          - { label: "Programs Section - Title Line 2 (Primary Color)", name: "programs_title2_primary", widget: "string", default: "Programs" }
+          - { label: "Programs Section - Description", name: "programs_description", widget: "text", default: "The Bachelor of Optometry is a 4-year comprehensive program that trains students to become optometrists, specializing in eye care and vision science. Optometrists examine eyes, diagnose vision problems, prescribe corrective devices, and provide pre- and post-operative care. The program covers anatomy, physiology, vision science, eye diseases, and clinical techniques, preparing graduates for careers in private practice, research, academia, and public health." }
+          - label: "Programs List"
+            name: "programs_list"
+            widget: "list"
+            fields:
+              - { label: "Icon (Lucide React Name - e.g., Eye, Users)", name: "icon", widget: "string", default: "Eye" }
+              - { label: "Title", name: "title", widget: "string", default: "Bachelor of Optometry" }
+              - { label: "Description", name: "description", widget: "text", default: "Comprehensive 4-year program covering all aspects of eye care and vision science." }
+              - { label: "Duration", name: "duration", widget: "string", default: "3+1 Years" }
+
+          - { label: "Special Features Section - Title Line 1", name: "features_title1", widget: "string", default: "Special" }
+          - { label: "Special Features Section - Title Line 2 (Primary Color)", name: "features_title2_primary", widget: "string", default: "Features" }
+          - { label: "Special Features Section - Description", name: "features_description", widget: "text", default: "Discover what makes S Salins College of Optometry unique" }
+          - label: "Features List"
+            name: "features_list"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+
+          - { label: "Vision & Mission Section - Title", name: "vision_title", widget: "string", default: "Our Vision & Mission" }
+          - { label: "Vision & Mission Section - Paragraph 1", name: "vision_text1", widget: "markdown", default: "Velemegna society seeks to demonstrate the love of Christ through excellence in health care and community services." }
+          - { label: "Vision & Mission Section - Paragraph 2", name: "vision_text2", widget: "markdown", default: "‘Velemegna’ is a registered charitable society. We provide quality eye care services, which is comprehensive and affordable to all. This is achieved by training, research, and excellence in service delivery. In addition, we will continue with Founders compassion for care of the Leprosy affected." }
+          - label: "Stats List"
+            name: "stats_list"
+            widget: "list"
+            fields:
+              - { label: "Icon (Lucide React Name - e.g., Award, BookOpen)", name: "icon", widget: "string" }
+              - { label: "Number", name: "number", widget: "string" }
+              - { label: "Label", name: "label", widget: "string" }
+
+      - label: "Admission Page"
+        name: "admission"
+        file: "src/content/admission.json"
+        fields:
+          - { label: "Hero Section - Title Line 1", name: "hero_title1", widget: "string", default: "Join Our" }
+          - { label: "Hero Section - Title Line 2 (Primary Color)", name: "hero_title2_primary", widget: "string", default: "Community" }
+          - { label: "Hero Section - Subtitle", name: "hero_subtitle", widget: "text", default: "Begin your journey toward a rewarding career in optometry. Discover our comprehensive admission process and requirements." }
+          - { label: "Hero Section - Apply Now Button Text", name: "hero_apply_button_text", widget: "string", default: "Apply Now" }
+          - { label: "Hero Section - Apply Now Button Link", name: "hero_apply_button_link", widget: "string", default: "https://docs.google.com/forms/d/e/1FAIpQLSfrKremrqPjDh5O_o9GrJ60qdIq4d9LjIJ30IDe-Ar9YrQchw/viewform?usp=sharing" }
+
+          - { label: "Eligibility Section - Title Line 1", name: "eligibility_title1", widget: "string", default: "Eligibility" }
+          - { label: "Eligibility Section - Title Line 2 (Primary Color)", name: "eligibility_title2_primary", widget: "string", default: "Requirements" }
+          - { label: "Eligibility Section - Description", name: "eligibility_description", widget: "text", default: "Review our program requirements to ensure you meet the criteria for admission" }
+          - label: "Eligibility Programs List"
+            name: "eligibility_programs"
+            widget: "list"
+            fields:
+              - { label: "Program Name", name: "program_name", widget: "string" }
+              - { label: "Requirements", name: "requirements", widget: "list", field: { label: "Requirement", name: "requirement_item", widget: "string"} }
+              - { label: "Duration", name: "duration", widget: "string" }
+              - { label: "Intake", name: "intake", widget: "string" }
+
+          - { label: "Process Section - Title Line 1", name: "process_title1", widget: "string", default: "Admission" }
+          - { label: "Process Section - Title Line 2 (Primary Color)", name: "process_title2_primary", widget: "string", default: "Process" }
+          - { label: "Process Section - Description", name: "process_description", widget: "text", default: "Follow these steps to complete your application successfully" }
+          - label: "Admission Steps List"
+            name: "admission_steps"
+            widget: "list"
+            fields:
+              - { label: "Step Number", name: "step", widget: "number" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Icon (Lucide React Name)", name: "icon", widget: "string" }
+              # - { label: "Timeline", name: "timeline", widget: "string" } # This was commented out in original code
+
+          - { label: "How to Apply Section - Title Line 1", name: "apply_title1", widget: "string", default: "How to" }
+          - { label: "How to Apply Section - Title Line 2 (Primary Color)", name: "apply_title2_primary", widget: "string", default: "Apply" }
+          - { label: "How to Apply Section - Description", name: "apply_description", widget: "text", default: "Complete guide on obtaining and submitting your application" }
+          - { label: "Application Form - Title", name: "application_form_title", widget: "string", default: "Application Form" }
+          - { label: "Application Form - Address", name: "application_form_address", widget: "markdown", default: "Application forms are available at:\nCourse Coordinator\nS Salins College of Optometry\nVelemegna Society, Golekhana\nBidar – 585401, Karnataka" }
+          - { label: "Application Form - Fee In-Person", name: "application_form_fee_person", widget: "string", default: "Rs. 300/-" }
+          - { label: "Application Form - Fee By Post", name: "application_form_fee_post", widget: "string", default: "Rs. 350/- (DD in favor of \"S Salins College of Optometry, Bidar\")" }
+          - { label: "Application Form - Instructions", name: "application_form_instructions", widget: "text", default: "The application must be handwritten and filled in block letters by the applicant."}
+          - { label: "Required Documents - Title", name: "required_docs_title", widget: "string", default: "Required Documents" }
+          - label: "Required Documents List"
+            name: "required_docs_list"
+            widget: "list"
+            field: { label: "Document", name: "document_item", widget: "string"}
+          - { label: "Important Notes - Title", name: "important_notes_title", widget: "string", default: "Important Notes:" }
+          - label: "Important Notes List"
+            name: "important_notes_list"
+            widget: "list"
+            field: { label: "Note", name: "note_item", widget: "string"}
+
+          - { label: "FAQ Section - Title Line 1", name: "faq_title1", widget: "string", default: "Frequently Asked" }
+          - { label: "FAQ Section - Title Line 2 (Primary Color)", name: "faq_title2_primary", widget: "string", default: "Questions" }
+          - { label: "FAQ Section - Description", name: "faq_description", widget: "text", default: "Find answers to common questions about our admission process" }
+          - label: "FAQ List"
+            name: "faq_list"
+            widget: "list"
+            fields:
+              - { label: "Question", name: "question", widget: "string" }
+              - { label: "Answer", name: "answer", widget: "text" }
+
+      - label: "Events Page"
+        name: "events"
+        file: "src/content/events.json"
+        fields:
+          - { label: "Hero Section - Title Line 1", name: "hero_title1", widget: "string", default: "Events &" }
+          - { label: "Hero Section - Title Line 2 (Primary Color)", name: "hero_title2_primary", widget: "string", default: "Activities" }
+          - { label: "Hero Section - Subtitle", name: "hero_subtitle", widget: "text", default: "Stay updated with our latest events, conferences, and academic activities that enhance your learning experience" }
+
+          - { label: "Featured Image Section - Image", name: "featured_event_image", widget: "image", media_folder: "public/images/pages", public_folder: "/images/pages" }
+          - { label: "Featured Image Section - Title", name: "featured_event_title", widget: "string", default: "Featured Event Highlight" }
+          - { label: "Featured Image Section - Description", name: "featured_event_description", widget: "text", default: "Experience the excellence of optometry education at S. Salins College" }
+
+          - { label: "Featured Video Section - YouTube URL", name: "featured_video_url", widget: "string", default: "https://www.youtube.com/embed/y3ENCYq4eP4?si=SqDEmipOspYv1Hc4" }
+          - { label: "Featured Video Section - Title", name: "featured_video_title", widget: "string", default: "Featured Video" }
+          - { label: "Featured Video Section - Description", name: "featured_video_description", widget: "text", default: "Watch our latest featured content showcasing excellence in optometry education" }
+
+          - { label: "Upcoming Events Section - Title Line 1", name: "upcoming_title1", widget: "string", default: "Upcoming" }
+          - { label: "Upcoming Events Section - Title Line 2 (Primary Color)", name: "upcoming_title2_primary", widget: "string", default: "Events" }
+          - { label: "Upcoming Events Section - Description", name: "upcoming_description", widget: "text", default: "Mark your calendars for these exciting upcoming events and opportunities" }
+          - label: "Upcoming Events List"
+            name: "upcoming_events_list"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Date", name: "date", widget: "string" }
+              - { label: "Time", name: "time", widget: "string" }
+              - { label: "Location", name: "location", widget: "string" }
+              - { label: "Description (currently not displayed in UI, but good to have)", name: "description", widget: "text" }
+              - { label: "Attendees (currently not displayed in UI)", name: "attendees", widget: "string" }
+              - { label: "Type (e.g. Event, Conference)", name: "type", widget: "string" }
+              - { label: "Registration Link (currently not displayed in UI)", name: "registration", widget: "string" }
+
+          # - { label: "Event Highlights Section - Title Line 1", name: "highlights_title1", widget: "string", default: "Event" } # This section was commented out
+          # - { label: "Event Highlights Section - Title Line 2 (Primary Color)", name: "highlights_title2_primary", widget: "string", default: "Highlights" }
+          # - { label: "Event Highlights Section - Description", name: "highlights_description", widget: "text", default: "Watch highlights from our recent events and celebrations" }
+          # - label: "Event Videos List" # This section was commented out
+          #   name: "event_videos_list"
+          #   widget: "list"
+          #   fields:
+          #     - { label: "Title", name: "title", widget: "string" }
+          #     - { label: "YouTube Video ID", name: "video_id", widget: "string" }
+          #     - { label: "Description", name: "description", widget: "text" }
+
+          - { label: "Past Events Gallery - Title Line 1", name: "gallery_title1", widget: "string", default: "Past" }
+          - { label: "Past Events Gallery - Title Line 2 (Primary Color)", name: "gallery_title2_primary", widget: "string", default: "Events Gallery" }
+          - { label: "Past Events Gallery - Description", name: "gallery_description", widget: "text", default: "A glimpse into our vibrant campus life and memorable events" }
+          - label: "Past Event Images"
+            name: "gallery_images"
+            widget: "list"
+            summary: "{{fields.alt_text | default('Image')}}"
+            field: { label: "Image", name: "image_item", widget: "image", media_folder: "public/images/gallery", public_folder: "/images/gallery" }
+            # It's better to store objects with alt text for images in a list
+            # fields:
+            #   - { label: "Image", name: "image_url", widget: "image" }
+            #   - { label: "Alt Text", name: "alt_text", widget: "string" }
+
+  # It would be good to have a global settings collection too for things like Navbar links, Footer content etc.
+  # For now, focusing on page-specific content.
+  # - name: "settings"
+  #   label: "Site Settings"
+  #   files:
+  #     - label: "Navigation"
+  #       name: "navigation"
+  #       file: "src/content/navigation.json"
+  #       fields:
+  #         - label: "Navigation Links"
+  #           name: "links"
+  #           widget: "list"
+  #           fields:
+  #             - { label: "Text", name: "text", widget: "string" }
+  #             - { label: "URL", name: "url", widget: "string" }
+  #     - label: "Footer"
+  #       name: "footer"
+  #       file: "src/content/footer.json"
+  #       fields:
+  #         - { label: "Copyright Text", name: "copyright", widget: "string" }
+  #         # Add more footer fields as needed
