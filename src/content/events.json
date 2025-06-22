@@ -1,0 +1,63 @@
+{
+  "hero_title1": "Events &",
+  "hero_title2_primary": "Activities",
+  "hero_subtitle": "Stay updated with our latest events, conferences, and academic activities that enhance your learning experience",
+  "featured_event_image": "/images/image 74.jpeg",
+  "featured_event_title": "Featured Event Highlight",
+  "featured_event_description": "Experience the excellence of optometry education at S. Salins College",
+  "featured_video_url": "https://www.youtube.com/embed/y3ENCYq4eP4?si=SqDEmipOspYv1Hc4",
+  "featured_video_title": "Featured Video",
+  "featured_video_description": "Watch our latest featured content showcasing excellence in optometry education",
+  "upcoming_title1": "Upcoming",
+  "upcoming_title2_primary": "Events",
+  "upcoming_description": "Mark your calendars for these exciting upcoming events and opportunities",
+  "upcoming_events_list": [
+    {
+      "title": "World Sight Day",
+      "date": "October 09, 2025",
+      "time": "09:00 AM - 06:00 PM",
+      "location": "S Salins Optometry College",
+      "description": "Join leading experts in optometry for three days of cutting-edge research presentations, workshops, and networking opportunities.",
+      "attendees": "200+ Expected",
+      "type": "Event",
+      "registration": "https://forms.google.com/placeholder"
+    },
+    {
+      "title": "World Optometry Day",
+      "date": "March 23, 2026",
+      "time": "09:00 AM - 06:00 PM",
+      "location": "S Salins Optometry College",
+      "description": "Showcase of outstanding student research projects in vision science and clinical optometry.",
+      "attendees": "150+ Expected",
+      "type": "Event",
+      "registration": "https://forms.google.com/placeholder"
+    },
+    {
+      "title": "World Glaucoma Week",
+      "date": "March 09-15, 2026",
+      "time": "09:00 PM - 06:00 PM",
+      "location": "S Salins Optometry College",
+      "description": "Interactive workshop connecting students with industry professionals and potential employers.",
+      "attendees": "80+ Expected",
+      "type": "Event",
+      "registration": "https://forms.google.com/placeholder"
+    }
+  ],
+  "gallery_title1": "Past",
+  "gallery_title2_primary": "Events Gallery",
+  "gallery_description": "A glimpse into our vibrant campus life and memorable events",
+  "gallery_images": [
+    { "image_item": "/images/image 73.jpeg" },
+    { "image_item": "/images/image 78.jpeg" },
+    { "image_item": "/images/image6.jpeg" },
+    { "image_item": "/images/image59.jpeg" },
+    { "image_item": "/images/image61.jpeg" },
+    { "image_item": "/images/image67.jpeg" },
+    { "image_item": "/images/image47.jpeg" },
+    { "image_item": "/images/image55.jpeg" },
+    { "image_item": "/images/image36.jpeg" },
+    { "image_item": "/images/image24.jpeg" },
+    { "image_item": "/images/image 75.jpeg" },
+    { "image_item": "/images/image 76.jpeg" }
+  ]
+}
