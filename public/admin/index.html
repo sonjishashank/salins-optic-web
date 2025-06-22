@@ -4,16 +4,18 @@
   <meta charset="utf-8" /> 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
   <title>Content Manager</title> 
-  <!-- Do NOT include the main decap-cms.js script here if using manual init this way --> 
 </head> 
 <body> 
   <div id="nc-root"></div> 
   <script type="module"> 
     import CMS, { init } from 'https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.core.js'; 
-    
-    // Use init with a specific config path if needed, 
-    // but by default it looks for /admin/config.yml 
-    init(); 
+     
+    init({ 
+      config: { 
+        load_config_file: true, // Ensures it tries to load the file 
+        config_file_path: '/admin/config.yml' // Explicit path 
+      } 
+    }); 
   </script> 
 </body> 
-</html>
+</html> 
