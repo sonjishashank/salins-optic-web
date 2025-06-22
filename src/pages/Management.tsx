@@ -10,92 +10,92 @@ const Management = () => {
     experience: "25+ years",
     email: "principal@salinsoptometry.edu",
     phone: "+1 (555) 123-4501",
-    image: "http://velemegna.org/newsletters/Sybil.png?auto=format&fit=crop&w=400&q=80",
+    image: "https://velemegna.org/Velemegna%20Update/Dr.%20Sybil.jpeg?auto=format&fit=crop&w=400&q=80",
     bio: "Dr. Sybil Salins brings over 25 years of experience in optometric education and clinical practice. She has been instrumental in developing innovative curricula and advancing research in vision science.",
     achievements: ["Fellow of American Academy of Optometry", "Published 50+ research papers", "Recipient of Excellence in Education Award"]
   };
 
   const facultyHeads = [
     {
-      name: "Dr. Emily Rodriguez",
-      title: "Head of Clinical Optometry",
-      qualification: "OD, MS in Clinical Optometry",
+      name: "Mrs.Aparna Rai",
+      title: "Assistant Professor ",
+      qualification: "Msc optometry",
       specialization: "Contact Lenses & Corneal Health",
       email: "e.rodriguez@salinsoptometry.edu",
-      image: "https://images.unsplash.com/photo-1594824723009-43cffe9a6a5b?auto=format&fit=crop&w=400&q=80",
+      image: "/Staff Images/image 4.jpeg?auto=format&fit=crop&w=400&q=80",
     },
     {
-      name: "Dr. James Wilson",
-      title: "Head of Research Division",
-      qualification: "PhD in Vision Science, OD",
+      name: "Priscilla Topno",
+      title: "Tutor for Microbiology and Pathology",
+      qualification: "MSc. Microbiology",
       specialization: "Retinal Diseases & Low Vision",
       email: "j.wilson@salinsoptometry.edu",
-      image: "https://images.unsplash.com/photo-1582750433449-648ed127bb54?auto=format&fit=crop&w=400&q=80",
+      image: "/Staff Images/image 3.jpeg?auto=format&fit=crop&w=400&q=80",
     },
     {
-      name: "Dr. Lisa Thompson",
-      title: "Head of Pediatric Optometry",
-      qualification: "OD, Fellowship in Pediatric Optometry",
+      name: "Dr. Ajai Kumar S. Molakeri",
+      title: "Guest Professor",
+      qualification: "Ph.D Physics",
       specialization: "Children's Vision & Development",
       email: "l.thompson@salinsoptometry.edu",
-      image: "https://images.unsplash.com/photo-1551836022-deb4988cc6c0?auto=format&fit=crop&w=400&q=80",
+      image: "/Staff Images/image 2.jpeg?auto=format&fit=crop&w=400&q=80",
     },
     {
-      name: "Dr. Robert Kumar",
-      title: "Head of Technology Integration",
-      qualification: "OD, MS in Biomedical Engineering",
+      name: "Mrs Elizabeth",
+      title: "Assistant Professor ",
+      qualification: "Msc optometry",
       specialization: "Advanced Diagnostic Equipment",
       email: "r.kumar@salinsoptometry.edu",
-      image: "https://images.unsplash.com/photo-1607990281513-2c110a25bd8c?auto=format&fit=crop&w=400&q=80",
+      image: "/Staff Images/image 1.jpeg?auto=format&fit=crop&w=400&q=80",
     },
-    {
-      name: "Dr. Robert Kumar",
-      title: "Head of Technology Integration",
-      qualification: "OD, MS in Biomedical Engineering",
-      specialization: "Advanced Diagnostic Equipment",
-      email: "r.kumar@salinsoptometry.edu",
-      image: "https://images.unsplash.com/photo-1607990281513-2c110a25bd8c?auto=format&fit=crop&w=400&q=80",
-    },
-    {
-      name: "Dr. Robert Kumar",
-      title: "Head of Technology Integration",
-      qualification: "OD, MS in Biomedical Engineering",
-      specialization: "Advanced Diagnostic Equipment",
-      email: "r.kumar@salinsoptometry.edu",
-      image: "https://images.unsplash.com/photo-1607990281513-2c110a25bd8c?auto=format&fit=crop&w=400&q=80",
-    },
-    {
-      name: "Dr. Robert Kumar",
-      title: "Head of Technology Integration",
-      qualification: "OD, MS in Biomedical Engineering",
-      specialization: "Advanced Diagnostic Equipment",
-      email: "r.kumar@salinsoptometry.edu",
-      image: "https://images.unsplash.com/photo-1607990281513-2c110a25bd8c?auto=format&fit=crop&w=400&q=80",
-    },
-    {
-      name: "Dr. Robert Kumar",
-      title: "Head of Technology Integration",
-      qualification: "OD, MS in Biomedical Engineering",
-      specialization: "Advanced Diagnostic Equipment",
-      email: "r.kumar@salinsoptometry.edu",
-      image: "https://images.unsplash.com/photo-1607990281513-2c110a25bd8c?auto=format&fit=crop&w=400&q=80",
-    },
-    {
-      name: "Dr. Robert Kumar",
-      title: "Head of Technology Integration",
-      qualification: "OD, MS in Biomedical Engineering",
-      specialization: "Advanced Diagnostic Equipment",
-      email: "r.kumar@salinsoptometry.edu",
-      image: "https://images.unsplash.com/photo-1607990281513-2c110a25bd8c?auto=format&fit=crop&w=400&q=80",
-    },
-    {
-      name: "Dr. Robert Kumar",
-      title: "Head of Technology Integration",
-      qualification: "OD, MS in Biomedical Engineering",
-      specialization: "Advanced Diagnostic Equipment",
-      email: "r.kumar@salinsoptometry.edu",
-      image: "https://images.unsplash.com/photo-1607990281513-2c110a25bd8c?auto=format&fit=crop&w=400&q=80",
-    }
+    // {
+    //   name: "Dr. Robert Kumar",
+    //   title: "Head of Technology Integration",
+    //   qualification: "OD, MS in Biomedical Engineering",
+    //   specialization: "Advanced Diagnostic Equipment",
+    //   email: "r.kumar@salinsoptometry.edu",
+    //   image: "https://images.unsplash.com/photo-1607990281513-2c110a25bd8c?auto=format&fit=crop&w=400&q=80",
+    // },
+    // {
+    //   name: "Dr. Robert Kumar",
+    //   title: "Head of Technology Integration",
+    //   qualification: "OD, MS in Biomedical Engineering",
+    //   specialization: "Advanced Diagnostic Equipment",
+    //   email: "r.kumar@salinsoptometry.edu",
+    //   image: "https://images.unsplash.com/photo-1607990281513-2c110a25bd8c?auto=format&fit=crop&w=400&q=80",
+    // },
+    // {
+    //   name: "Dr. Robert Kumar",
+    //   title: "Head of Technology Integration",
+    //   qualification: "OD, MS in Biomedical Engineering",
+    //   specialization: "Advanced Diagnostic Equipment",
+    //   email: "r.kumar@salinsoptometry.edu",
+    //   image: "https://images.unsplash.com/photo-1607990281513-2c110a25bd8c?auto=format&fit=crop&w=400&q=80",
+    // },
+    // {
+    //   name: "Dr. Robert Kumar",
+    //   title: "Head of Technology Integration",
+    //   qualification: "OD, MS in Biomedical Engineering",
+    //   specialization: "Advanced Diagnostic Equipment",
+    //   email: "r.kumar@salinsoptometry.edu",
+    //   image: "https://images.unsplash.com/photo-1607990281513-2c110a25bd8c?auto=format&fit=crop&w=400&q=80",
+    // },
+    // {
+    //   name: "Dr. Robert Kumar",
+    //   title: "Head of Technology Integration",
+    //   qualification: "OD, MS in Biomedical Engineering",
+    //   specialization: "Advanced Diagnostic Equipment",
+    //   email: "r.kumar@salinsoptometry.edu",
+    //   image: "https://images.unsplash.com/photo-1607990281513-2c110a25bd8c?auto=format&fit=crop&w=400&q=80",
+    // },
+    // {
+    //   name: "Dr. Robert Kumar",
+    //   title: "Head of Technology Integration",
+    //   qualification: "OD, MS in Biomedical Engineering",
+    //   specialization: "Advanced Diagnostic Equipment",
+    //   email: "r.kumar@salinsoptometry.edu",
+    //   image: "https://images.unsplash.com/photo-1607990281513-2c110a25bd8c?auto=format&fit=crop&w=400&q=80",
+    // }
   ];
 
   return (
@@ -138,7 +138,7 @@ const Management = () => {
                     {principal.bio}
                   </p>
                   
-                  <div className="space-y-2">
+                  {/* <div className="space-y-2">
                     <h4 className="font-semibold text-foreground">Key Achievements:</h4>
                     <ul className="space-y-1">
                       {principal.achievements.map((achievement, index) => (
@@ -148,17 +148,17 @@ const Management = () => {
                         </li>
                       ))}
                     </ul>
-                  </div>
+                  </div> */}
                   
                   <div className="flex flex-col space-y-2 pt-4 border-t border-border">
-                    <div className="flex items-center space-x-2 text-muted-foreground text-sm">
+                    {/* <div className="flex items-center space-x-2 text-muted-foreground text-sm">
                       <Mail className="w-4 h-4" />
                       <span>{principal.email}</span>
-                    </div>
-                    <div className="flex items-center space-x-2 text-muted-foreground text-sm">
+                    </div> */}
+                    {/* <div className="flex items-center space-x-2 text-muted-foreground text-sm">
                       <Phone className="w-4 h-4" />
                       <span>{principal.phone}</span>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>
@@ -183,11 +183,14 @@ const Management = () => {
             {facultyHeads.map((faculty, index) => (
               <Card key={index} className="overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-2">
                 <CardContent className="p-0">
-                  <img 
-                    src={faculty.image} 
-                    alt={faculty.name}
-                    className="w-full h-48 object-cover"
-                  />
+                  <div className="aspect-[2/3] relative">
+                    <img 
+                      src={faculty.image} 
+                      alt={faculty.name}
+                      className="absolute inset-0 w-full h-full object-cover object-center"
+                      loading="lazy"
+                    />
+                  </div>
                   <div className="p-6 space-y-3">
                     <div className="text-center">
                       <h3 className="font-semibold text-lg text-foreground">{faculty.name}</h3>
@@ -195,17 +198,17 @@ const Management = () => {
                       <p className="text-xs text-muted-foreground mt-1">{faculty.qualification}</p>
                     </div>
                     
-                    <div className="text-center">
+                    {/* <div className="text-center">
                       <Badge variant="outline" className="text-xs">
                         {faculty.specialization}
                       </Badge>
-                    </div>
+                    </div> */}
                     
                     <div className="pt-2 border-t border-border">
-                      <div className="flex items-center space-x-2 text-muted-foreground text-sm">
+                      {/* <div className="flex items-center space-x-2 text-muted-foreground text-sm">
                         <Mail className="w-4 h-4" />
                         <span className="truncate">{faculty.email}</span>
-                      </div>
+                      </div> */}
                     </div>
                   </div>
                 </CardContent>
