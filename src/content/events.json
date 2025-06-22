@@ -1,16 +1,5 @@
 {
-  "hero_title1": "Events &",
-  "hero_title2_primary": "Activities",
-  "hero_subtitle": "Stay updated with our latest events, conferences, and academic activities that enhance your learning experience",
-  "featured_event_image": "/images/image 74.jpeg",
-  "featured_event_title": "Featured Event Highlight",
-  "featured_event_description": "Experience the excellence of optometry education at S. Salins College",
-  "featured_video_url": "https://www.youtube.com/embed/y3ENCYq4eP4?si=SqDEmipOspYv1Hc4",
-  "featured_video_title": "Featured Video",
-  "featured_video_description": "Watch our latest featured content showcasing excellence in optometry education",
-  "upcoming_title1": "Upcoming",
   "upcoming_title2_primary": "Events",
-  "upcoming_description": "Mark your calendars for these exciting upcoming events and opportunities",
   "upcoming_events_list": [
     {
       "title": "World Sight Day",
@@ -41,23 +30,68 @@
       "attendees": "80+ Expected",
       "type": "Event",
       "registration": "https://forms.google.com/placeholder"
+    },
+    {
+      "title": "Freshers day",
+      "date": "July 30, 2025",
+      "time": "11:00 AM - 03:00 PM",
+      "location": "S Salins Optometry College",
+      "type": "Party",
+      "registration": "Nothing as of NOW",
+      "attendees": "Nothing as of NOW",
+      "description": "Nothing as of NOW"
     }
   ],
+  "featured_event_title": "Featured Event Highlight",
+  "hero_title2_primary": "Activities",
+  "featured_video_title": "Featured Video",
+  "gallery_images": [
+    {
+      "image_item": "/images/image 73.jpeg"
+    },
+    {
+      "image_item": "/images/image 78.jpeg"
+    },
+    {
+      "image_item": "/images/image6.jpeg"
+    },
+    {
+      "image_item": "/images/image59.jpeg"
+    },
+    {
+      "image_item": "/images/image61.jpeg"
+    },
+    {
+      "image_item": "/images/image67.jpeg"
+    },
+    {
+      "image_item": "/images/image47.jpeg"
+    },
+    {
+      "image_item": "/images/image55.jpeg"
+    },
+    {
+      "image_item": "/images/image36.jpeg"
+    },
+    {
+      "image_item": "/images/image24.jpeg"
+    },
+    {
+      "image_item": "/images/image 75.jpeg"
+    },
+    {
+      "image_item": "/images/image 76.jpeg"
+    }
+  ],
+  "featured_event_image": "/images/image 74.jpeg",
+  "featured_event_description": "Experience the excellence of optometry education at S. Salins College",
   "gallery_title1": "Past",
+  "featured_video_description": "Watch our latest featured content showcasing excellence in optometry education",
   "gallery_title2_primary": "Events Gallery",
   "gallery_description": "A glimpse into our vibrant campus life and memorable events",
-  "gallery_images": [
-    { "image_item": "/images/image 73.jpeg" },
-    { "image_item": "/images/image 78.jpeg" },
-    { "image_item": "/images/image6.jpeg" },
-    { "image_item": "/images/image59.jpeg" },
-    { "image_item": "/images/image61.jpeg" },
-    { "image_item": "/images/image67.jpeg" },
-    { "image_item": "/images/image47.jpeg" },
-    { "image_item": "/images/image55.jpeg" },
-    { "image_item": "/images/image36.jpeg" },
-    { "image_item": "/images/image24.jpeg" },
-    { "image_item": "/images/image 75.jpeg" },
-    { "image_item": "/images/image 76.jpeg" }
-  ]
+  "upcoming_description": "Mark your calendars for these exciting upcoming events and opportunities",
+  "featured_video_url": "https://www.youtube.com/embed/y3ENCYq4eP4?si=SqDEmipOspYv1Hc4",
+  "upcoming_title1": "Upcoming",
+  "hero_subtitle": "Stay updated with our latest events, conferences, and academic activities that enhance your learning experience",
+  "hero_title1": "Events &"
 }
