@@ -4,18 +4,10 @@
   <meta charset="utf-8" /> 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
   <title>Content Manager</title> 
+  <script src="https://unpkg.com/decap-cms@3.6.4/dist/decap-cms.js"></script> 
+  <!-- Using a specific version 3.6.4 --> 
 </head> 
 <body> 
-  <div id="nc-root"></div> 
-  <script type="module"> 
-    import CMS, { init } from 'https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.core.js'; 
-     
-    init({ 
-      config: { 
-        load_config_file: true, // Ensures it tries to load the file 
-        config_file_path: '/admin/config.yml' // Explicit path 
-      } 
-    }); 
-  </script> 
+  <!-- The CMS will mount here automatically --> 
 </body> 
 </html> 
