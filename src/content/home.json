@@ -1,30 +1,4 @@
 {
-  "hero_title1": "Excellence in",
-  "hero_title2_primary": "Optometric Education",
-  "hero_subtitle": "Discover your potential at S. Salins College of Optometry, where we shape the future of eye care professionals through innovative education and hands-on experience.",
-  "hero_apply_button_text": "Apply Now",
-  "hero_apply_button_link": "https://docs.google.com/forms/d/e/1FAIpQLSfrKremrqPjDh5O_o9GrJ60qdIq4d9LjIJ30IDe-Ar9YrQchw/viewform?usp=sharing",
-  "hero_learn_more_button_text": "Learn More",
-  "hero_learn_more_button_link": "/admission",
-  "hero_spline_url": "https://prod.spline.design/EXUCiceuP8odg10J/scene.splinecode",
-  "about_title1": "About Our",
-  "about_title2_primary": "Institution",
-  "about_text": "S.Salins college of Optometry, Bidar established Dr. Sybil Salins in the memory of her mother Dr. Mrs. Susheela Salins in the year 2014-15. Dr. Sybil Salins realized that there are no optometry colleges in the northern part of Karnataka and especially in Bidar district. So she has taken a challenge to open an optometry college to educate students in the Bidar district. S.Salins College of Optometry is running by the Velemegna Good News Society Hospital, Bidar. Here we are offering B.Sc Optometry course since 2014-15. Our college is affiliated with Rajiv Gandhi University of Health Sciences, Bangalore.",
-  "about_image": "http://velemegna.org/newsletters/About1.jpg?auto=format&fit=crop&w=1200&q=80",
-  "programs_title1": "Our",
-  "programs_title2_primary": "Programs",
-  "programs_description": "The Bachelor of Optometry is a 4-year comprehensive program that trains students to become optometrists, specializing in eye care and vision science. Optometrists examine eyes, diagnose vision problems, prescribe corrective devices, and provide pre- and post-operative care. The program covers anatomy, physiology, vision science, eye diseases, and clinical techniques, preparing graduates for careers in private practice, research, academia, and public health.",
-  "programs_list": [
-    {
-      "icon": "Eye",
-      "title": "Bachelor of Optometry",
-      "description": "Comprehensive 4-year program covering all aspects of eye care and vision science.",
-      "duration": "3+1 Years"
-    }
-  ],
-  "features_title1": "Special",
-  "features_title2_primary": "Features",
-  "features_description": "Discover what makes S Salins College of Optometry unique",
   "features_list": [
     {
       "title": "Infrastructure",
@@ -52,8 +26,31 @@
     }
   ],
   "vision_title": "Our Vision & Mission",
+  "hero_title2_primary": "Optometric Education",
+  "hero_apply_button_text": "Apply Now",
+  "hero_spline_url": "https://prod.spline.design/EXUCiceuP8odg10J/scene.splinecode",
+  "programs_title1": "Our",
+  "about_image": "http://velemegna.org/newsletters/About1.jpg?auto=format&fit=crop&w=1200&q=80",
+  "about_title1": "About Our",
+  "programs_description": "The Bachelor of Optometry is a 4-year comprehensive program that trains students to become optometrists, specializing in eye care and vision science. Optometrists examine eyes, diagnose vision problems, prescribe corrective devices, and provide pre- and post-operative care. The program covers anatomy, physiology, vision science, eye diseases, and clinical techniques, preparing graduates for careers in private practice, research, academia, and public health.",
   "vision_text1": "Velemegna society seeks to demonstrate the love of Christ through excellence in health care and community services.",
+  "programs_title2_primary": "Programs",
+  "programs_list": [
+    {
+      "icon": "Eye",
+      "title": "Bachelor of Optometry",
+      "description": "Comprehensive 4-year program covering all aspects of eye care and vision science.",
+      "duration": "3+1 Years"
+    }
+  ],
   "vision_text2": "‘Velemegna’ is a registered charitable society. We provide quality eye care services, which is comprehensive and affordable to all. This is achieved by training, research, and excellence in service delivery. In addition, we will continue with Founders compassion for care of the Leprosy affected.",
+  "about_title2_primary": "Institution",
+  "hero_learn_more_button_text": "Learn More",
+  "hero_apply_button_link": "www.velemegna.org",
+  "features_description": "Discover what makes S Salins College of Optometry unique",
+  "features_title1": "Special",
+  "hero_learn_more_button_link": "/admission",
+  "hero_subtitle": "Discover your potential at S. Salins College of Optometry, where we shape the future of eye care professionals through innovative education and hands-on experience.",
   "stats_list": [
     {
       "icon": "Award",
@@ -70,5 +67,8 @@
       "number": "11+",
       "label": "Years of Excellence"
     }
-  ]
+  ],
+  "hero_title1": "Excellence in",
+  "about_text": "S.Salins college of Optometry, Bidar established Dr. Sybil Salins in the memory of her mother Dr. Mrs. Susheela Salins in the year 2014-15. Dr. Sybil Salins realized that there are no optometry colleges in the northern part of Karnataka and especially in Bidar district. So she has taken a challenge to open an optometry college to educate students in the Bidar district. S.Salins College of Optometry is running by the Velemegna Good News Society Hospital, Bidar. Here we are offering B.Sc Optometry course since 2014-15. Our college is affiliated with Rajiv Gandhi University of Health Sciences, Bangalore.",
+  "features_title2_primary": "Features"
 }
