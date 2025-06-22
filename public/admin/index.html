@@ -5,9 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
   <title>Content Manager</title> 
   <script src="https://unpkg.com/decap-cms@3.6.4/dist/decap-cms.js"></script> 
-  <!-- Using a specific version 3.6.4 --> 
 </head> 
 <body> 
-  <!-- The CMS will mount here automatically --> 
+  <script> 
+    // Initialize the CMS manually AFTER the main script has loaded 
+    // and explicitly tell it where the config file is. 
+    // Note: We are not using type="module" here, we are using the global CMS object 
+    // that the decap-cms.js script (UMD) makes available. 
+    CMS.init({ 
+      config: { 
+        load_config_file: true, 
+        config_file_path: '/admin/config.yml' // Crucial: Path from the domain root 
+      } 
+    }); 
+  </script> 
 </body> 
 </html> 
