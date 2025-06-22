@@ -8,6 +8,17 @@ export default defineConfig(({ mode }) => ({
   server: {
     host: "::",
     port: 8080,
+    hmr: {
+      overlay: false
+    },
+    watch: {
+      usePolling: false,
+      interval: 100
+    },
+    fs: {
+      allow: ['..'],
+      strict: false
+    }
   },
   plugins: [
     react(),
@@ -19,4 +30,6 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  publicDir: "public",
+  base: "/",
 }));

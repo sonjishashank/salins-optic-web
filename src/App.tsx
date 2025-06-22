@@ -1,14 +1,16 @@
+// App.tsx
+import { useLocation } from "react-router-dom";
+import { Suspense } from "react";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { Routes, Route } from "react-router-dom";
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Suspense } from "react";
-import { LoadingSpinner } from "./components/ui/loading";
 import Layout from "./components/layout/Layout";
+import { LoadingSpinner } from "./components/ui/loading";
 import React from "react";
 
-// Lazy load pages for better performance
+// Lazy load pages
 const Home = React.lazy(() => import("./pages/Home"));
 const Management = React.lazy(() => import("./pages/Management"));
 const Admission = React.lazy(() => import("./pages/Admission"));
@@ -18,12 +20,19 @@ const NotFound = React.lazy(() => import("./pages/NotFound"));
 
 const queryClient = new QueryClient();
 
-const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <BrowserRouter>
+const App = () => {
+  const location = useLocation();
+
+  // ⚠️ Prevent React rendering anything under /admin
+  if (location.pathname.startsWith("/admin")) {
+    return null;
+  }
+
+  return (
+    <QueryClientProvider client={queryClient}>
+      <TooltipProvider>
+        <Toaster />
+        <Sonner />
         <Layout>
           <Suspense fallback={<LoadingSpinner />}>
             <Routes>
@@ -36,9 +45,9 @@ const App = () => (
             </Routes>
           </Suspense>
         </Layout>
-      </BrowserRouter>
-    </TooltipProvider>
-  </QueryClientProvider>
-);
+      </TooltipProvider>
+    </QueryClientProvider>
+  );
+};
 
 export default App;

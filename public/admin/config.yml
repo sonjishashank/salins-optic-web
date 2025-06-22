@@ -1,6 +1,6 @@
 backend:
-  name: github # Refer to https://decapcms.org/docs/github-backend/ for details
-  repo: your-username/your-repo-name # Replace with your GitHub repo: e.g., "owner/repo"
+  name: github
+  repo: sonjishashank/salins-optic-web # Replace with your actual GitHub repository
   branch: main # Branch to update (optional, defaults to master)
   # For Git Gateway (recommended for Vercel + Netlify Identity for auth)
   # name: git-gateway

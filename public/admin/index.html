@@ -1,23 +1,47 @@
-<!doctype html> 
-<html> 
-<head> 
-  <meta charset="utf-8" /> 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
-  <title>Content Manager</title> 
-  <script src="https://unpkg.com/decap-cms@3.6.4/dist/decap-cms.js"></script> 
-</head> 
-<body> 
-  <script> 
-    // Initialize the CMS manually AFTER the main script has loaded 
-    // and explicitly tell it where the config file is. 
-    // Note: We are not using type="module" here, we are using the global CMS object 
-    // that the decap-cms.js script (UMD) makes available. 
-    CMS.init({ 
-      config: { 
-        load_config_file: true, 
-        config_file_path: '/admin/config.yml' // Crucial: Path from the domain root 
-      } 
-    }); 
-  </script> 
-</body> 
-</html> 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Content Manager</title>
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  </head>
+  <body>
+    <!-- Create a loading indicator -->
+    <div id="nc-root">
+      <div style="text-align: center; margin-top: 50px;">Loading CMS...</div>
+    </div>
+
+    <script src="https://unpkg.com/decap-cms@latest/dist/decap-cms.js"></script>
+    <script>
+      // Wait for both the CMS script and window to load
+      Promise.all([
+        new Promise(resolve => {
+          if (window.CMS) resolve();
+          else window.addEventListener('load', resolve);
+        }),
+        new Promise(resolve => {
+          const script = document.querySelector('script[src*="decap-cms"]');
+          if (script.loaded) resolve();
+          else script.addEventListener('load', resolve);
+        })
+      ]).then(() => {
+        // Initialize CMS
+        window.CMS.init({
+          config: {
+            backend: {
+              name: "github",
+              repo: "sonjishashank/salins-optic-web",
+              branch: "main"
+            },
+            load_config_file: true,
+            local_backend: true,
+            config_file_path: "/admin/config.yml"
+          }
+        });
+      }).catch(error => {
+        console.error('Failed to initialize CMS:', error);
+        document.getElementById('nc-root').innerHTML = 'Error loading CMS. Please check console for details.';
+      });
+    </script>
+  </body>
+</html>
