@@ -48,14 +48,14 @@ const Management = () => {
       email: "r.kumar@salinsoptometry.edu",
       image: "/Staff Images/image 1.jpeg?auto=format&fit=crop&w=400&q=80",
     },
-    // {
-    //   name: "Dr. Robert Kumar",
-    //   title: "Head of Technology Integration",
-    //   qualification: "OD, MS in Biomedical Engineering",
-    //   specialization: "Advanced Diagnostic Equipment",
-    //   email: "r.kumar@salinsoptometry.edu",
-    //   image: "https://images.unsplash.com/photo-1607990281513-2c110a25bd8c?auto=format&fit=crop&w=400&q=80",
-    // },
+    {
+      name: "Dr. Sannapaneni krishnaiah",
+      title: "Guest Professor",
+      qualification: "Ph.D. in Vision Science and Statistics",
+      specialization: "Advanced Diagnostic Equipment",
+      email: "r.kumar@salinsoptometry.edu",
+      image: "/Staff Images/image 5.jpeg?auto=format&fit=crop&w=400&q=80",
+    },
     // {
     //   name: "Dr. Robert Kumar",
     //   title: "Head of Technology Integration",
