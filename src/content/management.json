@@ -57,6 +57,38 @@
       "specialization": "NTG",
       "email": "NTG",
       "image": "/images/uploads/image-5.jpeg"
+    },
+    {
+      "name": "Hemalatha D",
+      "title": "Assistant Professor",
+      "qualification": "Msc optometry",
+      "specialization": "NTG",
+      "email": "NTG",
+      "image": "/images/uploads/image-8.jpeg"
+    },
+    {
+      "name": "Dr Veerendar Patil",
+      "title": "Assistant Professor",
+      "qualification": "BA MS",
+      "specialization": "NTG",
+      "email": "NTG",
+      "image": "/images/uploads/image-6.jpeg"
+    },
+    {
+      "name": "Philemon Raj Prasad",
+      "title": "Administrator",
+      "qualification": "B.Ed. M.A",
+      "specialization": "NTG",
+      "email": "NTG",
+      "image": "/images/uploads/image-7.jpeg"
+    },
+    {
+      "name": "Nancy Priyanka.N",
+      "qualification": "M.optom",
+      "specialization": "NTG",
+      "title": "Optometric Optics (2nd year)",
+      "email": "NTG",
+      "image": "/images/uploads/image-9.jpeg"
     }
   ]
 }
