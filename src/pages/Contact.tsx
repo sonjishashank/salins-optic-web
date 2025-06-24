@@ -9,43 +9,41 @@ import { MapPin, Phone, Mail, Clock, Facebook, Instagram, Linkedin, Youtube } fr
 
 // Add this import
 import { useForm, ValidationError } from '@formspree/react';
+import contactData from '@/content/contact.json';
+
+// Helper to map icon names to Lucide components
+const iconComponents: { [key: string]: React.ElementType } = {
+  MapPin,
+  Phone,
+  Mail,
+  Clock,
+  Facebook,
+  Instagram,
+  Linkedin,
+  Youtube,
+};
 
 const Contact = () => {
-  const contactInfo = [
-    {
-      icon: MapPin,
-      title: "Address",
-      details: ["Old City, Golekhana", "Bidar, KA 585401", "India"],
-      color: "text-blue-600"
-    },
-    {
-      icon: Phone,
-      title: "Phone",
-      details: ["08482-230467, -230460", "+91 9483612027", "+91 9900293035"],
-      color: "text-green-600"
-    },
-    {
-      icon: Mail,
-      title: "Email",
-      details: ["ssalinsoptometrycollege@gmail.com"],
-      color: "text-purple-600"
-    },
-    {
-      icon: Clock,
-      title: "Office Hours",
-      details: ["Monday - Friday: 9:00 AM - 6:00 PM", "Saturday: 9:00 AM - 2:00 PM", "Sunday: Closed"],
-      color: "text-orange-600"
-    }
-  ];
+  const {
+    contact_info: contactInfoData,
+    social_links: socialLinksData,
+    form_endpoint: formEndpoint,
+    hero_title1,
+    hero_title2_primary,
+    hero_subtitle
+  } = contactData;
 
-  const socialLinks = [
-    { name: 'Facebook', icon: Facebook, url: '#', color: 'hover:text-blue-600' },
-    { name: 'Instagram', icon: Instagram, url: 'https://www.instagram.com/salinsoptometrycollege/?utm_source=ig_embed&ig_rid=de764a22-ba8b-4ebc-a7fb-45a3050862dd', color: 'hover:text-pink-600' },
-    { name: 'LinkedIn', icon: Linkedin, url: '#', color: 'hover:text-blue-700' },
-    { name: 'YouTube', icon: Youtube, url: '#', color: 'hover:text-red-600' },
-  ];
+  const contactInfo = contactInfoData.map(info => ({
+    ...info,
+    icon: iconComponents[info.icon] || MapPin, // Default to MapPin if icon not found
+  }));
 
-  const [formState, submitForm] = useForm("mkgbvdra");
+  const socialLinks = socialLinksData.map(link => ({
+    ...link,
+    icon: iconComponents[link.icon] || Facebook, // Default to Facebook if icon not found
+  }));
+
+  const [formState, submitForm] = useForm(formEndpoint);
 
   if (formState.succeeded) {
     return (
@@ -67,10 +65,10 @@ const Contact = () => {
       <section className="py-20 bg-gradient-to-br from-primary/10 to-accent/20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="font-bold text-4xl md:text-6xl text-foreground mb-6">
-            Get in <span className="text-primary">Touch</span>
+            {hero_title1} <span className="text-primary">{hero_title2_primary}</span>
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            We're here to help you with any questions about our programs, admissions, or campus life. Reach out to us today!
+            {hero_subtitle}
           </p>
         </div>
       </section>

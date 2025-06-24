@@ -1,102 +1,10 @@
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Mail, Phone } from 'lucide-react';
+import managementData from '@/content/management.json';
 
 const Management = () => {
-  const principal = {
-    name: "Dr. Sybil Salins",
-    title: "Director/Principal",
-    qualification: "MBBS.M.Sc.CEH (London), DOMS(Vellore), ophthalmology Surgeon (Eye Specialist)",
-    experience: "25+ years",
-    email: "principal@salinsoptometry.edu",
-    phone: "+1 (555) 123-4501",
-    image: "https://velemegna.org/Velemegna%20Update/Dr.%20Sybil.jpeg?auto=format&fit=crop&w=400&q=80",
-    bio: "Dr. Sybil Salins brings over 25 years of experience in optometric education and clinical practice. She has been instrumental in developing innovative curricula and advancing research in vision science.",
-    achievements: ["Fellow of American Academy of Optometry", "Published 50+ research papers", "Recipient of Excellence in Education Award"]
-  };
-
-  const facultyHeads = [
-    {
-      name: "Mrs.Aparna Rai",
-      title: "Assistant Professor ",
-      qualification: "Msc optometry",
-      specialization: "Contact Lenses & Corneal Health",
-      email: "e.rodriguez@salinsoptometry.edu",
-      image: "/Staff Images/image 4.jpeg?auto=format&fit=crop&w=400&q=80",
-    },
-    {
-      name: "Priscilla Topno",
-      title: "Tutor for Microbiology and Pathology",
-      qualification: "MSc. Microbiology",
-      specialization: "Retinal Diseases & Low Vision",
-      email: "j.wilson@salinsoptometry.edu",
-      image: "/Staff Images/image 3.jpeg?auto=format&fit=crop&w=400&q=80",
-    },
-    {
-      name: "Dr. Ajai Kumar S. Molakeri",
-      title: "Guest Professor",
-      qualification: "Ph.D Physics",
-      specialization: "Children's Vision & Development",
-      email: "l.thompson@salinsoptometry.edu",
-      image: "/Staff Images/image 2.jpeg?auto=format&fit=crop&w=400&q=80",
-    },
-    {
-      name: "Mrs Elizabeth",
-      title: "Assistant Professor ",
-      qualification: "Msc optometry",
-      specialization: "Advanced Diagnostic Equipment",
-      email: "r.kumar@salinsoptometry.edu",
-      image: "/Staff Images/image 1.jpeg?auto=format&fit=crop&w=400&q=80",
-    },
-    {
-      name: "Dr. Sannapaneni krishnaiah",
-      title: "Guest Professor",
-      qualification: "Ph.D. in Vision Science and Statistics",
-      specialization: "Advanced Diagnostic Equipment",
-      email: "r.kumar@salinsoptometry.edu",
-      image: "/Staff Images/Image 5.jpeg?auto=format&fit=crop&w=400&q=80",
-    },
-    {
-      name: "Dr Veerendar Patil",
-      title: "Assistant Professor",
-      qualification: "BA MS",
-      specialization: "Advanced Diagnostic Equipment",
-      email: "r.kumar@salinsoptometry.edu",
-      image: "/Staff Images/Image 6.jpeg?auto=format&fit=crop&w=400&q=80",
-    },
-    {
-      name: "Hemalatha D",
-      title: "Assistant Professor",
-      qualification: "Msc optometry",
-      specialization: "Advanced Diagnostic Equipment",
-      email: "r.kumar@salinsoptometry.edu",
-      image: "/Staff Images/Image 8.jpeg?auto=format&fit=crop&w=400&q=80",
-    },
-    {
-      name: "Philemon raj Prasad",
-      title: "Adminstrator",
-      qualification: "B.Ed M.A",
-      specialization: "Advanced Diagnostic Equipment",
-      email: "r.kumar@salinsoptometry.edu",
-      image: "/Staff Images/Image 7.jpeg?auto=format&fit=crop&w=400&q=80",
-    },
-    // {
-    //   name: "Dr. Robert Kumar",
-    //   title: "Head of Technology Integration",
-    //   qualification: "OD, MS in Biomedical Engineering",
-    //   specialization: "Advanced Diagnostic Equipment",
-    //   email: "r.kumar@salinsoptometry.edu",
-    //   image: "https://images.unsplash.com/photo-1607990281513-2c110a25bd8c?auto=format&fit=crop&w=400&q=80",
-    // },
-    // {
-    //   name: "Dr. Robert Kumar",
-    //   title: "Head of Technology Integration",
-    //   qualification: "OD, MS in Biomedical Engineering",
-    //   specialization: "Advanced Diagnostic Equipment",
-    //   email: "r.kumar@salinsoptometry.edu",
-    //   image: "https://images.unsplash.com/photo-1607990281513-2c110a25bd8c?auto=format&fit=crop&w=400&q=80",
-    // }
-  ];
+  const { principal, faculty_heads: facultyHeads, hero_title1, hero_title2_primary, hero_subtitle } = managementData;
 
   return (
     <div className="pt-16 min-h-screen bg-background">
@@ -104,10 +12,10 @@ const Management = () => {
       <section className="py-16 bg-gradient-to-r from-primary/10 to-accent/20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="font-bold text-4xl md:text-6xl text-foreground mb-6">
-            Our <span className="text-primary">Leadership</span>
+            {hero_title1} <span className="text-primary">{hero_title2_primary}</span>
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Meet the distinguished faculty and administrators who guide our institution toward excellence in optometric education
+            {hero_subtitle}
           </p>
         </div>
       </section>
@@ -138,27 +46,33 @@ const Management = () => {
                     {principal.bio}
                   </p>
                   
-                  {/* <div className="space-y-2">
-                    <h4 className="font-semibold text-foreground">Key Achievements:</h4>
-                    <ul className="space-y-1">
-                      {principal.achievements.map((achievement, index) => (
-                        <li key={index} className="text-sm text-muted-foreground flex items-start">
-                          <span className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                          {achievement}
-                        </li>
-                      ))}
-                    </ul>
-                  </div> */}
+                  {principal.achievements && principal.achievements.length > 0 && (
+                    <div className="space-y-2">
+                      <h4 className="font-semibold text-foreground">Key Achievements:</h4>
+                      <ul className="space-y-1">
+                        {principal.achievements.map((achievement, index) => (
+                          <li key={index} className="text-sm text-muted-foreground flex items-start">
+                            <span className="w-2 h-2 bg-primary rounded-full mt-1.5 mr-3 flex-shrink-0"></span>
+                            {achievement}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
                   
                   <div className="flex flex-col space-y-2 pt-4 border-t border-border">
-                    {/* <div className="flex items-center space-x-2 text-muted-foreground text-sm">
-                      <Mail className="w-4 h-4" />
-                      <span>{principal.email}</span>
-                    </div> */}
-                    {/* <div className="flex items-center space-x-2 text-muted-foreground text-sm">
-                      <Phone className="w-4 h-4" />
-                      <span>{principal.phone}</span>
-                    </div> */}
+                    {principal.email && (
+                      <div className="flex items-center space-x-2 text-muted-foreground text-sm">
+                        <Mail className="w-4 h-4" />
+                        <a href={`mailto:${principal.email}`} className="hover:text-primary">{principal.email}</a>
+                      </div>
+                    )}
+                    {principal.phone && (
+                      <div className="flex items-center space-x-2 text-muted-foreground text-sm">
+                        <Phone className="w-4 h-4" />
+                        <a href={`tel:${principal.phone}`} className="hover:text-primary">{principal.phone}</a>
+                      </div>
+                    )}
                   </div>
                 </div>
               </div>
@@ -198,17 +112,21 @@ const Management = () => {
                       <p className="text-xs text-muted-foreground mt-1">{faculty.qualification}</p>
                     </div>
                     
-                    {/* <div className="text-center">
-                      <Badge variant="outline" className="text-xs">
-                        {faculty.specialization}
-                      </Badge>
-                    </div> */}
+                    {faculty.specialization && (
+                      <div className="text-center my-2">
+                        <Badge variant="outline" className="text-xs">
+                          {faculty.specialization}
+                        </Badge>
+                      </div>
+                    )}
                     
                     <div className="pt-2 border-t border-border">
-                      {/* <div className="flex items-center space-x-2 text-muted-foreground text-sm">
-                        <Mail className="w-4 h-4" />
-                        <span className="truncate">{faculty.email}</span>
-                      </div> */}
+                      {faculty.email && (
+                        <div className="flex items-center space-x-2 text-muted-foreground text-sm mt-2">
+                          <Mail className="w-4 h-4 flex-shrink-0" />
+                          <a href={`mailto:${faculty.email}`} className="truncate hover:text-primary">{faculty.email}</a>
+                        </div>
+                      )}
                     </div>
                   </div>
                 </CardContent>
