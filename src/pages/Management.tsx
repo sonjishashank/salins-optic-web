@@ -54,7 +54,7 @@ const Management = () => {
       qualification: "Ph.D. in Vision Science and Statistics",
       specialization: "Advanced Diagnostic Equipment",
       email: "r.kumar@salinsoptometry.edu",
-      image: "/Staff Images/image 5.jpeg?auto=format&fit=crop&w=400&q=80",
+      image: "/Staff Images/Image 5.jpeg?auto=format&fit=crop&w=400&q=80",
     },
     // {
     //   name: "Dr. Robert Kumar",
