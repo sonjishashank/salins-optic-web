@@ -3,19 +3,13 @@
   "hero_title2_primary": "Leadership",
   "hero_subtitle": "Meet our dedicated team of educators and administrators",
   "principal": {
-    "achievements": [
-      "Fellow of American Academy of Optometry",
-      "Published 50+ research papers",
-      "Recipient of Excellence in Education Award"
-    ],
+
     "bio": "Dr. Sybil Salins brings over 25 years of experience in optometric education and clinical practice. She has been instrumental in developing innovative curricula and advancing research in vision science.",
     "experience": "25+ years",
     "name": "Dr. Sybil Salins",
-    "phone": "+1 (555) 123-4501",
     "qualification": "MBBS.M.Sc.CEH (London), DOMS(Vellore), ophthalmology Surgeon (Eye Specialist)",
     "title": "Director/Principal",
-    "image": "https://velemegna.org/Velemegna%20Update/Dr.%20Sybil.jpeg?auto=format&fit=crop&w=400&q=80",
-    "email": "principal@salinsoptometry.edu"
+    "image": "https://velemegna.org/Velemegna%20Update/Dr.%20Sybil.jpeg?auto=format&fit=crop&w=400&q=80"
   },
   "faculty_heads": [
     {
