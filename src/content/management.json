@@ -22,72 +22,54 @@
       "name": "Mrs.Aparna Rai",
       "title": "Assistant Professor",
       "qualification": "Msc optometry",
-      "specialization": "Contact Lenses & Corneal Health",
-      "email": "e.rodriguez@salinsoptometry.edu",
       "image": "/Staff Images/image 4.jpeg?auto=format&fit=crop&w=400&q=80"
     },
     {
       "name": "Priscilla Topno",
       "title": "Tutor for Microbiology and Pathology",
       "qualification": "MSc. Microbiology",
-      "specialization": "Retinal Diseases & Low Vision",
-      "email": "j.wilson@salinsoptometry.edu",
       "image": "/Staff Images/image 3.jpeg?auto=format&fit=crop&w=400&q=80"
     },
     {
       "name": "Mrs Elizabeth",
       "title": "Assistant Professor",
       "qualification": "Msc optometry",
-      "specialization": "Advanced Diagnostic Equipment",
-      "email": "r.kumar@salinsoptometry.edu",
       "image": "/Staff Images/image 1.jpeg?auto=format&fit=crop&w=400&q=80"
     },
     {
       "name": "Dr. Ajai Kumar S. Molakeri",
       "title": "Guest Professor",
       "qualification": "Ph.D Physics",
-      "specialization": "Children's Vision & Development",
-      "email": "l.thompson@salinsoptometry.edu",
       "image": "/Staff Images/image 2.jpeg?auto=format&fit=crop&w=400&q=80"
     },
     {
       "name": "Sannapaneni Krishnaiah",
       "title": "Guest Professor",
       "qualification": "Ph.D. in Vision Science and Statistics",
-      "specialization": "NTG",
-      "email": "NTG",
       "image": "/images/uploads/image-5.jpeg"
     },
     {
       "name": "Hemalatha D",
       "title": "Assistant Professor",
       "qualification": "Msc optometry",
-      "specialization": "NTG",
-      "email": "NTG",
       "image": "/images/uploads/image-8.jpeg"
     },
     {
       "name": "Dr Veerendar Patil",
       "title": "Assistant Professor",
       "qualification": "BA MS",
-      "specialization": "NTG",
-      "email": "NTG",
       "image": "/images/uploads/image-6.jpeg"
     },
     {
       "name": "Philemon Raj Prasad",
       "title": "Administrator",
       "qualification": "B.Ed. M.A",
-      "specialization": "NTG",
-      "email": "NTG",
       "image": "/images/uploads/image-7.jpeg"
     },
     {
       "name": "Nancy Priyanka.N",
       "qualification": "M.optom",
-      "specialization": "NTG",
       "title": "Optometric Optics (2nd year)",
-      "email": "NTG",
       "image": "/images/uploads/image-9.jpeg"
     }
   ]
