@@ -3,19 +3,19 @@
   "hero_title2_primary": "Leadership",
   "hero_subtitle": "Meet our dedicated team of educators and administrators",
   "principal": {
-    "name": "Dr. Sybil Salins",
-    "title": "Director/Principal",
-    "qualification": "MBBS.M.Sc.CEH (London), DOMS(Vellore), ophthalmology Surgeon (Eye Specialist)",
-    "experience": "25+ years",
-    "email": "principal@salinsoptometry.edu",
-    "phone": "+1 (555) 123-4501",
-    "image": "https://velemegna.org/Velemegna%20Update/Dr.%20Sybil.jpeg?auto=format&fit=crop&w=400&q=80",
-    "bio": "Dr. Sybil Salins brings over 25 years of experience in optometric education and clinical practice. She has been instrumental in developing innovative curricula and advancing research in vision science.",
     "achievements": [
       "Fellow of American Academy of Optometry",
       "Published 50+ research papers",
       "Recipient of Excellence in Education Award"
-    ]
+    ],
+    "bio": "Dr. Sybil Salins brings over 25 years of experience in optometric education and clinical practice. She has been instrumental in developing innovative curricula and advancing research in vision science.",
+    "experience": "25+ years",
+    "name": "Dr. Sybil Salins",
+    "phone": "+1 (555) 123-4501",
+    "qualification": "MBBS.M.Sc.CEH (London), DOMS(Vellore), ophthalmology Surgeon (Eye Specialist)",
+    "title": "Director/Principal",
+    "image": "https://velemegna.org/Velemegna%20Update/Dr.%20Sybil.jpeg?auto=format&fit=crop&w=400&q=80",
+    "email": "principal@salinsoptometry.edu"
   },
   "faculty_heads": [
     {
@@ -35,6 +35,14 @@
       "image": "/Staff Images/image 3.jpeg?auto=format&fit=crop&w=400&q=80"
     },
     {
+      "name": "Mrs Elizabeth",
+      "title": "Assistant Professor",
+      "qualification": "Msc optometry",
+      "specialization": "Advanced Diagnostic Equipment",
+      "email": "r.kumar@salinsoptometry.edu",
+      "image": "/Staff Images/image 1.jpeg?auto=format&fit=crop&w=400&q=80"
+    },
+    {
       "name": "Dr. Ajai Kumar S. Molakeri",
       "title": "Guest Professor",
       "qualification": "Ph.D Physics",
@@ -43,12 +51,12 @@
       "image": "/Staff Images/image 2.jpeg?auto=format&fit=crop&w=400&q=80"
     },
     {
-      "name": "Mrs Elizabeth",
-      "title": "Assistant Professor",
-      "qualification": "Msc optometry",
-      "specialization": "Advanced Diagnostic Equipment",
-      "email": "r.kumar@salinsoptometry.edu",
-      "image": "/Staff Images/image 1.jpeg?auto=format&fit=crop&w=400&q=80"
+      "name": "Sannapaneni Krishnaiah",
+      "title": "Guest Professor",
+      "qualification": "Ph.D. in Vision Science and Statistics",
+      "specialization": "NTG",
+      "email": "NTG",
+      "image": "/images/uploads/image-5.jpeg"
     }
   ]
 }
