@@ -129,8 +129,8 @@ collections:
               - { label: "Title", name: "title", widget: "string" }
               - { label: "Qualification", name: "qualification", widget: "string" }
               - { label: "Experience", name: "experience", widget: "string" }
-              - { label: "Email", name: "email", widget: "string" }
-              - { label: "Phone", name: "phone", widget: "string" }
+              # - { label: "Email", name: "email", widget: "string" }
+              # - { label: "Phone", name: "phone", widget: "string" }
               - { label: "Image", name: "image", widget: "image" }
               - { label: "Bio", name: "bio", widget: "text" }
               - { label: "Achievements", name: "achievements", widget: "list" }
@@ -142,6 +142,6 @@ collections:
               - { label: "Name", name: "name", widget: "string" }
               - { label: "Title", name: "title", widget: "string" }
               - { label: "Qualification", name: "qualification", widget: "string" }
-              - { label: "Specialization", name: "specialization", widget: "string" }
-              - { label: "Email", name: "email", widget: "string" }
+              # - { label: "Specialization", name: "specialization", widget: "string" }
+              # - { label: "Email", name: "email", widget: "string" }
               - { label: "Image", name: "image", widget: "image" }
