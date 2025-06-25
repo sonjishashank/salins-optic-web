@@ -3,7 +3,6 @@
   "hero_title2_primary": "Leadership",
   "hero_subtitle": "Meet our dedicated team of educators and administrators",
   "principal": {
-
     "bio": "Dr. Sybil Salins brings over 25 years of experience in optometric education and clinical practice. She has been instrumental in developing innovative curricula and advancing research in vision science.",
     "experience": "25+ years",
     "name": "Dr. Sybil Salins",
@@ -12,6 +11,24 @@
     "image": "https://velemegna.org/Velemegna%20Update/Dr.%20Sybil.jpeg?auto=format&fit=crop&w=400&q=80"
   },
   "faculty_heads": [
+    {
+      "name": "Philemon Raj Prasad",
+      "title": "Administrator",
+      "qualification": "B.Ed. M.A",
+      "image": "/images/uploads/image-7.jpeg"
+    },
+    {
+      "name": "Mrs Elizabeth",
+      "title": "Assistant Professor",
+      "qualification": "Msc optometry",
+      "image": "/Staff Images/image 1.jpeg?auto=format&fit=crop&w=400&q=80"
+    },
+    {
+      "name": "Dr Veerendar Patil",
+      "title": "Assistant Professor",
+      "qualification": "BA MS",
+      "image": "/images/uploads/image-6.jpeg"
+    },
     {
       "name": "Mrs.Aparna Rai",
       "title": "Assistant Professor",
@@ -23,12 +40,6 @@
       "title": "Tutor for Microbiology and Pathology",
       "qualification": "MSc. Microbiology",
       "image": "/Staff Images/image 3.jpeg?auto=format&fit=crop&w=400&q=80"
-    },
-    {
-      "name": "Mrs Elizabeth",
-      "title": "Assistant Professor",
-      "qualification": "Msc optometry",
-      "image": "/Staff Images/image 1.jpeg?auto=format&fit=crop&w=400&q=80"
     },
     {
       "name": "Dr. Ajai Kumar S. Molakeri",
@@ -47,18 +58,6 @@
       "title": "Assistant Professor",
       "qualification": "Msc optometry",
       "image": "/images/uploads/image-8.jpeg"
-    },
-    {
-      "name": "Dr Veerendar Patil",
-      "title": "Assistant Professor",
-      "qualification": "BA MS",
-      "image": "/images/uploads/image-6.jpeg"
-    },
-    {
-      "name": "Philemon Raj Prasad",
-      "title": "Administrator",
-      "qualification": "B.Ed. M.A",
-      "image": "/images/uploads/image-7.jpeg"
     },
     {
       "name": "Nancy Priyanka.N",
