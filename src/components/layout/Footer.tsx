@@ -77,7 +77,7 @@ const Footer = () => {
       href="https://wa.me/919110886128?text=We%20need%20a%20software%20solution%20for%20our%20business"
       target="_blank"
       rel="noopener noreferrer"
-      className="text-blue-500 hover:underline"
+      className="text-black-500 hover:underline"
     >
       Starset Consultancy Services
     </a>
