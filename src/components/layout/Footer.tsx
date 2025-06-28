@@ -70,9 +70,18 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-primary-foreground/20 mt-8 pt-8 text-center">
-          <p className="text-primary-foreground/80">
-            © 2025 S. Salins College of Optometry. All rights reserved.
-          </p>
+          <p>&copy; {new Date().getFullYear()} S. Salins College of Optometry. All rights reserved.</p> 
+  <p className="mt-2 text-sm">
+    Created with ❤️ by{" "}
+    <a
+      href="https://wa.me/919110886128?text=We%20need%20a%20software%20solution%20for%20our%20business"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-blue-500 hover:underline"
+    >
+      Starset Consultancy Services
+    </a>
+  </p>
         </div>
       </div>
     </footer>
