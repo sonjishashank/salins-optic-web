@@ -18,16 +18,16 @@
       "image": "/images/uploads/image-7.jpeg"
     },
     {
-      "name": "Mrs Elizabeth",
-      "title": "Assistant Professor",
-      "qualification": "Msc optometry",
-      "image": "/Staff Images/image 1.jpeg?auto=format&fit=crop&w=400&q=80"
-    },
-    {
       "name": "Dr Veerendar Patil",
       "title": "Assistant Professor",
       "qualification": "BA MS",
       "image": "/images/uploads/image-6.jpeg"
+    },
+    {
+      "name": "Mrs Elizabeth",
+      "title": "Assistant Professor",
+      "qualification": "Msc optometry",
+      "image": "/Staff Images/image 1.jpeg?auto=format&fit=crop&w=400&q=80"
     },
     {
       "name": "Mrs.Aparna Rai",
