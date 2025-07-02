@@ -24,6 +24,24 @@
   },
   "faculty_heads": [
     {
+      "name": "Dr. Humera",
+      "title": "Professor",
+      "qualification": "DODNB(Ophthalmologist)",
+      "image": "https://velemegna.org/Velemegna%20Update/DR.%20Humera.jpeg"
+    },
+    {
+      "name": "Dr K Mukta Bai D",
+      "qualification": "MBBS MS ophthalmology",
+      "title": "Professor",
+      "image": "/images/uploads/dr-k-mukta-bai-d.jpeg"
+    },
+    {
+      "name": "Dr Veerendar Patil",
+      "title": "Professor",
+      "qualification": "BA MS",
+      "image": "/images/uploads/image-6.jpeg"
+    },
+    {
       "name": "Mrs Elizabeth",
       "title": "Assistant Professor",
       "qualification": "Msc optometry",
