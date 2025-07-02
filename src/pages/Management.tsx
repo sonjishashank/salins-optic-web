@@ -4,7 +4,7 @@ import { Mail, Phone } from 'lucide-react';
 import managementData from '@/content/management.json';
 
 const Management = () => {
-  const { principal, faculty_heads: facultyHeads, hero_title1, hero_title2_primary, hero_subtitle } = managementData;
+  const { principal, administrator, faculty_heads: facultyHeads, hero_title1, hero_title2_primary, hero_subtitle } = managementData;
 
   return (
     <div className="pt-16 min-h-screen bg-background">
@@ -22,62 +22,122 @@ const Management = () => {
 
       {/* Principal */}
       <section className="py-16">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <Card className="overflow-hidden shadow-lg">
-            <CardContent className="p-0">
-              <div className="grid grid-cols-1 lg:grid-cols-2">
-                <img 
-                  src={principal.image} 
-                  alt={principal.name}
-                  className="w-full h-96 lg:h-full object-cover"
-                />
-                <div className="p-8 space-y-4">
-                  <div>
-                    <h3 className="font-bold text-2xl text-foreground">{principal.name}</h3>
-                    <p className="text-primary font-semibold">{principal.title}</p>
-                    <p className="text-sm text-muted-foreground">{principal.qualification}</p>
-                  </div>
-                  
-                  <Badge variant="secondary" className="font-medium">
-                    {principal.experience} Experience
-                  </Badge>
-                  
-                  <p className="text-muted-foreground leading-relaxed">
-                    {principal.bio}
-                  </p>
-                  
-                  {principal.achievements && principal.achievements.length > 0 && (
-                    <div className="space-y-2">
-                      <h4 className="font-semibold text-foreground">Key Achievements:</h4>
-                      <ul className="space-y-1">
-                        {principal.achievements.map((achievement, index) => (
-                          <li key={index} className="text-sm text-muted-foreground flex items-start">
-                            <span className="w-2 h-2 bg-primary rounded-full mt-1.5 mr-3 flex-shrink-0"></span>
-                            {achievement}
-                          </li>
-                        ))}
-                      </ul>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            {/* First Card */}
+            <Card className="overflow-hidden shadow-lg">
+              <CardContent className="p-0">
+                <div className="grid grid-cols-1 lg:grid-cols-2">
+                  <img 
+                    src={principal.image} 
+                    alt={principal.name}
+                    className="w-full h-96 lg:h-full object-cover"
+                  />
+                  <div className="p-8 space-y-4">
+                    <div>
+                      <h3 className="font-bold text-2xl text-foreground">{principal.name}</h3>
+                      <p className="text-primary font-semibold">{principal.title}</p>
+                      <p className="text-sm text-muted-foreground">{principal.qualification}</p>
                     </div>
-                  )}
-                  
-                  <div className="flex flex-col space-y-2 pt-4 border-t border-border">
-                    {principal.email && (
-                      <div className="flex items-center space-x-2 text-muted-foreground text-sm">
-                        <Mail className="w-4 h-4" />
-                        <a href={`mailto:${principal.email}`} className="hover:text-primary">{principal.email}</a>
+                    
+                    <Badge variant="secondary" className="font-medium">
+                      {principal.experience} Experience
+                    </Badge>
+                    
+                    <p className="text-muted-foreground leading-relaxed">
+                      {principal.bio}
+                    </p>
+                    
+                    {principal.achievements && principal.achievements.length > 0 && (
+                      <div className="space-y-2">
+                        <h4 className="font-semibold text-foreground">Key Achievements:</h4>
+                        <ul className="space-y-1">
+                          {principal.achievements.map((achievement, index) => (
+                            <li key={index} className="text-sm text-muted-foreground flex items-start">
+                              <span className="w-2 h-2 bg-primary rounded-full mt-1.5 mr-3 flex-shrink-0"></span>
+                              {achievement}
+                            </li>
+                          ))}
+                        </ul>
                       </div>
                     )}
-                    {principal.phone && (
-                      <div className="flex items-center space-x-2 text-muted-foreground text-sm">
-                        <Phone className="w-4 h-4" />
-                        <a href={`tel:${principal.phone}`} className="hover:text-primary">{principal.phone}</a>
-                      </div>
-                    )}
+                    
+                    {/* <div className="flex flex-col space-y-2 pt-4 border-t border-border">
+                      {principal.email && (
+                        <div className="flex items-center space-x-2 text-muted-foreground text-sm">
+                          <Mail className="w-4 h-4" />
+                          <a href={`mailto:${principal.email}`} className="hover:text-primary">{principal.email}</a>
+                        </div>
+                      )}
+                      {principal.phone && (
+                        <div className="flex items-center space-x-2 text-muted-foreground text-sm">
+                          <Phone className="w-4 h-4" />
+                          <a href={`tel:${principal.phone}`} className="hover:text-primary">{principal.phone}</a>
+                        </div>
+                      )}
+                    </div> */}
                   </div>
                 </div>
-              </div>
-            </CardContent>
-          </Card>
+              </CardContent>
+            </Card>
+
+            {/* Second Card - Same structure as first card */}
+            <Card className="overflow-hidden shadow-lg">
+              <CardContent className="p-0">
+                <div className="grid grid-cols-1 lg:grid-cols-2">
+                  <img 
+                    src={administrator.image} 
+                    alt={administrator.name}
+                    className="w-full h-96 lg:h-full object-cover"
+                  />
+                  <div className="p-8 space-y-4">
+                    <div>
+                      <h3 className="font-bold text-2xl text-foreground">{administrator.name}</h3>
+                      <p className="text-primary font-semibold">{administrator.title}</p>
+                      <p className="text-sm text-muted-foreground">{administrator.qualification}</p>
+                    </div>
+                    
+                    <Badge variant="secondary" className="font-medium">
+                      {administrator.experience} Experience
+                    </Badge>
+                    
+                    <p className="text-muted-foreground leading-relaxed">
+                      {administrator.bio}
+                    </p>
+                    
+                    {administrator.achievements && administrator.achievements.length > 0 && (
+                      <div className="space-y-2">
+                        <h4 className="font-semibold text-foreground">Key Achievements:</h4>
+                        <ul className="space-y-1">
+                          {administrator.achievements.map((achievement, index) => (
+                            <li key={index} className="text-sm text-muted-foreground flex items-start">
+                              <span className="w-2 h-2 bg-primary rounded-full mt-1.5 mr-3 flex-shrink-0"></span>
+                              {achievement}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
+                    
+                    {/* <div className="flex flex-col space-y-2 pt-4 border-t border-border">
+                      {administrator.email && (
+                        <div className="flex items-center space-x-2 text-muted-foreground text-sm">
+                          <Mail className="w-4 h-4" />
+                          <a href={`mailto:${administrator.email}`} className="hover:text-primary">{administrator.email}</a>
+                        </div>
+                      )}
+                      {administrator.phone && (
+                        <div className="flex items-center space-x-2 text-muted-foreground text-sm">
+                          <Phone className="w-4 h-4" />
+                          <a href={`tel:${administrator.phone}`} className="hover:text-primary">{administrator.phone}</a>
+                        </div>
+                      )}
+                    </div> */}
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
         </div>
       </section>
 

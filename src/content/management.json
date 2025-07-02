@@ -8,15 +8,21 @@
     "name": "Dr. Sybil Salins",
     "qualification": "MBBS.M.Sc.CEH (London), DOMS(Vellore), ophthalmology Surgeon (Eye Specialist)",
     "title": "Director/Principal",
-    "image": "https://velemegna.org/Velemegna%20Update/Dr.%20Sybil.jpeg?auto=format&fit=crop&w=400&q=80"
+    "image": "https://velemegna.org/Velemegna%20Update/Dr.%20Sybil.jpeg?auto=format&fit=crop&w=400&q=80",
+    "email": "principal@ssalins.edu",
+    "phone": "+91 1234567890"
+  },
+  "administrator": {
+    "bio": "Philemon Raj Prasad brings extensive experience in educational administration and management. He has been instrumental in streamlining academic operations and enhancing institutional efficiency.",
+    "experience": "15+ years",
+    "name": "Philemon Raj Prasad",
+    "qualification": "B.Ed. M.A",
+    "title": "Administrator",
+    "image": "/images/uploads/image-7.jpeg",
+    "email": "admin@ssalins.edu",
+    "phone": "+91 9876543210"
   },
   "faculty_heads": [
-    {
-      "name": "Philemon Raj Prasad",
-      "title": "Administrator",
-      "qualification": "B.Ed. M.A",
-      "image": "/images/uploads/image-7.jpeg"
-    },
     {
       "name": "Mrs Elizabeth",
       "title": "Assistant Professor",
