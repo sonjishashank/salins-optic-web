@@ -47,6 +47,9 @@
   "featured_video_title": "Featured Video",
   "gallery_images": [
     {
+      "image_item": "/images/uploads/optomerty-students.jpeg"
+    },
+    {
       "image_item": "/images/image 73.jpeg"
     },
     {
@@ -77,10 +80,10 @@
       "image_item": "/images/image24.jpeg"
     },
     {
-      "image_item": "/images/image 75.jpeg"
+      "image_item": "/images/image 76.jpeg"
     },
     {
-      "image_item": "/images/image 76.jpeg"
+      "image_item": "/images/image 75.jpeg"
     }
   ],
   "featured_event_image": "/images/image 74.jpeg",
