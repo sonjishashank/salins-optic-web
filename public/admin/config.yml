@@ -2,6 +2,8 @@ backend:
   name: github
   repo: sonjishashank/salins-optic-web
   branch: main
+  base_url: https://www.ssalinscollegeofoptometry.com
+  auth_endpoint: api/callback
 
 media_folder: "public/images/uploads"
 public_folder: "/images/uploads"
